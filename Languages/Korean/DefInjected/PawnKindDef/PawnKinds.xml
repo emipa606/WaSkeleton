@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 플레이어펙션 -->
+  <DRSKT_Colonist.label>스켈레톤 정착민</DRSKT_Colonist.label>
+  <DRSKT_Colonist.labelPlural>스켈레톤 정착민들</DRSKT_Colonist.labelPlural>
+  <DRSKT_Colonist.labelMale>남성 스켈레톤 정착민</DRSKT_Colonist.labelMale>
+  <DRSKT_Colonist.labelMalePlural>남성 스켈레톤 정착민들</DRSKT_Colonist.labelMalePlural>
+  <DRSKT_Colonist.labelFemale>여성 스켈레톤 정착민</DRSKT_Colonist.labelFemale>
+  <DRSKT_Colonist.labelFemalePlural>여성 스켈레톤 정착민들</DRSKT_Colonist.labelFemalePlural>
+</LanguageData>

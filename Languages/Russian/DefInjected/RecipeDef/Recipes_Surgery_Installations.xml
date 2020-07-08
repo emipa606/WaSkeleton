@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Install artificial parts -->
+  <DRSKT_InstallPegLeg.label>установить деревянную ногу</DRSKT_InstallPegLeg.label>
+  <DRSKT_InstallPegLeg.description>Установить деревянную ногу.</DRSKT_InstallPegLeg.description>
+  <DRSKT_InstallPegLeg.jobString>Устанавливает деревянную ногу</DRSKT_InstallPegLeg.jobString>
+  <DRSKT_InstallWoodenFoot.label>установить деревянную ступню</DRSKT_InstallWoodenFoot.label>
+  <DRSKT_InstallWoodenFoot.description>Установить деревянную ступню.</DRSKT_InstallWoodenFoot.description>
+  <DRSKT_InstallWoodenFoot.jobString>Устанавливает деревянную ступню.</DRSKT_InstallWoodenFoot.jobString>
+  <DRSKT_InstallSimpleProstheticLeg.label>установить протез ноги</DRSKT_InstallSimpleProstheticLeg.label>
+  <DRSKT_InstallSimpleProstheticLeg.description>Установить протез ноги.</DRSKT_InstallSimpleProstheticLeg.description>
+  <DRSKT_InstallSimpleProstheticLeg.jobString>Устанавливает протез ноги.</DRSKT_InstallSimpleProstheticLeg.jobString>
+  <DRSKT_InstallSimpleProstheticArm.label>установить протез руки</DRSKT_InstallSimpleProstheticArm.label>
+  <DRSKT_InstallSimpleProstheticArm.description>Установить протех руки.</DRSKT_InstallSimpleProstheticArm.description>
+  <DRSKT_InstallSimpleProstheticArm.jobString>Устанавливает протез руки.</DRSKT_InstallSimpleProstheticArm.jobString>
+  <DRSKT_InstallBionicArm.label>установить бионическую руку</DRSKT_InstallBionicArm.label>
+  <DRSKT_InstallBionicArm.description>Установить бионическую руку.</DRSKT_InstallBionicArm.description>
+  <DRSKT_InstallBionicArm.jobString>Устанавливает бионическую руку.</DRSKT_InstallBionicArm.jobString>
+  <DRSKT_InstallBionicLeg.label>установить бионическую ногу</DRSKT_InstallBionicLeg.label>
+  <DRSKT_InstallBionicLeg.description>Установить бионическую ногу.</DRSKT_InstallBionicLeg.description>
+  <DRSKT_InstallBionicLeg.jobString>Устанавливает бионическую ногу.</DRSKT_InstallBionicLeg.jobString>
+  <DRSKT_InstallArchotechArm.label>установить архотек руку</DRSKT_InstallArchotechArm.label>
+  <DRSKT_InstallArchotechArm.description>Установить архотек руку.</DRSKT_InstallArchotechArm.description>
+  <DRSKT_InstallArchotechArm.jobString>Устанавливает архотек руку.</DRSKT_InstallArchotechArm.jobString>
+  <DRSKT_InstallArchotechLeg.label>установить архотек ногу</DRSKT_InstallArchotechLeg.label>
+  <DRSKT_InstallArchotechLeg.description>Установить архотек ногу.</DRSKT_InstallArchotechLeg.description>
+  <DRSKT_InstallArchotechLeg.jobString>Устанавливает архотек ногу.</DRSKT_InstallArchotechLeg.jobString>
+  <DRSKT_InstallPowerClaw.label>установить силовой коготь</DRSKT_InstallPowerClaw.label>
+  <DRSKT_InstallPowerClaw.description>Установить силовой коготь.</DRSKT_InstallPowerClaw.description>
+  <DRSKT_InstallPowerClaw.jobString>Устанавливает силовой коготь.</DRSKT_InstallPowerClaw.jobString>
+</LanguageData>

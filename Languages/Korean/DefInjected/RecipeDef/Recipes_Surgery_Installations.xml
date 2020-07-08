@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Install artificial parts -->
+  <DRSKT_InstallPegLeg.label>의족 장착</DRSKT_InstallPegLeg.label>
+  <DRSKT_InstallPegLeg.description>나무로 만든 간단한 의족을 장착합니다.</DRSKT_InstallPegLeg.description>
+  <DRSKT_InstallPegLeg.jobString>의족 설치 중.</DRSKT_InstallPegLeg.jobString>
+  <DRSKT_InstallWoodenFoot.label>목발 장착</DRSKT_InstallWoodenFoot.label>
+  <DRSKT_InstallWoodenFoot.description>나무로 만든 간단한 목발을 장착합니다.</DRSKT_InstallWoodenFoot.description>
+  <DRSKT_InstallWoodenFoot.jobString>목발 설치 중.</DRSKT_InstallWoodenFoot.jobString>
+  <DRSKT_InstallSimpleProstheticLeg.label>간단한 의족 장착</DRSKT_InstallSimpleProstheticLeg.label>
+  <DRSKT_InstallSimpleProstheticLeg.description>간단한 의족를 장착합니다.</DRSKT_InstallSimpleProstheticLeg.description>
+  <DRSKT_InstallSimpleProstheticLeg.jobString>간단한 의족 설치 중.</DRSKT_InstallSimpleProstheticLeg.jobString>
+  <DRSKT_InstallSimpleProstheticArm.label>간단한 의수 장착</DRSKT_InstallSimpleProstheticArm.label>
+  <DRSKT_InstallSimpleProstheticArm.description>간단한 의수를 장착합니다.</DRSKT_InstallSimpleProstheticArm.description>
+  <DRSKT_InstallSimpleProstheticArm.jobString>간단한 의수 설치 중.</DRSKT_InstallSimpleProstheticArm.jobString>
+  <DRSKT_InstallBionicArm.label>생체공학 팔 이식</DRSKT_InstallBionicArm.label>
+  <DRSKT_InstallBionicArm.description>생체공학 팔을 이식합니다.</DRSKT_InstallBionicArm.description>
+  <DRSKT_InstallBionicArm.jobString>생체공학 팔 이식 중.</DRSKT_InstallBionicArm.jobString>
+  <DRSKT_InstallBionicLeg.label>생체공학 다리 이식</DRSKT_InstallBionicLeg.label>
+  <DRSKT_InstallBionicLeg.description>생체공학 다리를 이식합니다.</DRSKT_InstallBionicLeg.description>
+  <DRSKT_InstallBionicLeg.jobString>생체공학 다리 이식 중.</DRSKT_InstallBionicLeg.jobString>
+  <DRSKT_InstallArchotechArm.label>초월공학 팔 이식</DRSKT_InstallArchotechArm.label>
+  <DRSKT_InstallArchotechArm.description>초월공학 팔을 이식합니다.</DRSKT_InstallArchotechArm.description>
+  <DRSKT_InstallArchotechArm.jobString>초월공학 팔 이식 중.</DRSKT_InstallArchotechArm.jobString>
+  <DRSKT_InstallArchotechLeg.label>초월공학 다리 이식</DRSKT_InstallArchotechLeg.label>
+  <DRSKT_InstallArchotechLeg.description>초월공학 다리를 이식합니다.</DRSKT_InstallArchotechLeg.description>
+  <DRSKT_InstallArchotechLeg.jobString>초월공학 다리 이식 중.</DRSKT_InstallArchotechLeg.jobString>
+  <DRSKT_InstallPowerClaw.label>강화 발톱 이식</DRSKT_InstallPowerClaw.label>
+  <DRSKT_InstallPowerClaw.description>강화 발톱을 이식합니다.</DRSKT_InstallPowerClaw.description>
+  <DRSKT_InstallPowerClaw.jobString>강화 발톱 이식 중.</DRSKT_InstallPowerClaw.jobString>
+</LanguageData>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DRSKT_Body.label>скелет</DRSKT_Body.label>
+  <DRSKT_Body.corePart.parts.5.customLabel>левое плечо</DRSKT_Body.corePart.parts.5.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.0.customLabel>левая ключица</DRSKT_Body.corePart.parts.5.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.customLabel>левая рука</DRSKT_Body.corePart.parts.5.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.0.customLabel>левая плечевая кость</DRSKT_Body.corePart.parts.5.parts.1.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.1.customLabel>левая лучевая кость</DRSKT_Body.corePart.parts.5.parts.1.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.customLabel>левая ладонь</DRSKT_Body.corePart.parts.5.parts.1.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.0.customLabel>левый мизинец</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.1.customLabel>левый безымянный палец</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.2.customLabel>левый средний палец</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.3.customLabel>левый указательный палец</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.3.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.4.customLabel>левый большой пацел</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.4.customLabel>
+  <DRSKT_Body.corePart.parts.6.customLabel>правое плечо</DRSKT_Body.corePart.parts.6.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.0.customLabel>правая ключица</DRSKT_Body.corePart.parts.6.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.customLabel>правая рука</DRSKT_Body.corePart.parts.6.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.0.customLabel>правая плечевая кость</DRSKT_Body.corePart.parts.6.parts.1.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.1.customLabel>правая лучевая кость</DRSKT_Body.corePart.parts.6.parts.1.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.customLabel>правая ладонь</DRSKT_Body.corePart.parts.6.parts.1.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.0.customLabel>правый мизинец</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.1.customLabel>правый безымянный палец</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.2.customLabel>правый средний палец</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.3.customLabel>правый указательный палец</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.3.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.4.customLabel>правый большой палец</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.4.customLabel>
+  <DRSKT_Body.corePart.parts.8.customLabel>левая нога</DRSKT_Body.corePart.parts.8.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.0.customLabel>левая бедренная кость</DRSKT_Body.corePart.parts.8.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.1.customLabel>левая берцовая кость</DRSKT_Body.corePart.parts.8.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.customLabel>левая степня</DRSKT_Body.corePart.parts.8.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.0.customLabel>мизинец на левой ноге</DRSKT_Body.corePart.parts.8.parts.2.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.1.customLabel>безымянный палец на левой ноге</DRSKT_Body.corePart.parts.8.parts.2.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.2.customLabel>средний палец на левой ноге</DRSKT_Body.corePart.parts.8.parts.2.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.3.customLabel>указательный палец на левой ноге</DRSKT_Body.corePart.parts.8.parts.2.parts.3.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.4.customLabel>большой палец на левой ноге</DRSKT_Body.corePart.parts.8.parts.2.parts.4.customLabel>
+  <DRSKT_Body.corePart.parts.9.customLabel>правая нога</DRSKT_Body.corePart.parts.9.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.0.customLabel>правая бедренная кость</DRSKT_Body.corePart.parts.9.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.1.customLabel>правая берцовая кость</DRSKT_Body.corePart.parts.9.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.customLabel>правая ступня</DRSKT_Body.corePart.parts.9.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.0.customLabel>мизинец на правой ноге</DRSKT_Body.corePart.parts.9.parts.2.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.1.customLabel>безымянный палец на правой ноге</DRSKT_Body.corePart.parts.9.parts.2.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.2.customLabel>средний палце на правой ноге</DRSKT_Body.corePart.parts.9.parts.2.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.3.customLabel>указательный палец на правой ноге</DRSKT_Body.corePart.parts.9.parts.2.parts.3.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.4.customLabel>большой палец на правой ноге</DRSKT_Body.corePart.parts.9.parts.2.parts.4.customLabel>
+</LanguageData>

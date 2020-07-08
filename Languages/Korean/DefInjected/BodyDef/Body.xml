@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DRSKT_Body.label>스켈레톤</DRSKT_Body.label>
+  <DRSKT_Body.corePart.parts.5.customLabel>왼쪽 어깨</DRSKT_Body.corePart.parts.5.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.0.customLabel>왼쪽 clavicle</DRSKT_Body.corePart.parts.5.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.customLabel>왼쪽 팔</DRSKT_Body.corePart.parts.5.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.0.customLabel>왼쪽 상완골</DRSKT_Body.corePart.parts.5.parts.1.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.1.customLabel>왼쪽 요골</DRSKT_Body.corePart.parts.5.parts.1.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.customLabel>왼쪽 손</DRSKT_Body.corePart.parts.5.parts.1.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.0.customLabel>왼쪽 소지 손가락</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.1.customLabel>왼쪽 약지 손가락</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.2.customLabel>왼쪽 중지 손가락</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.3.customLabel>왼쪽 검지 손가락</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.3.customLabel>
+  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.4.customLabel>왼쪽 엄지 손가락</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.4.customLabel>
+  <DRSKT_Body.corePart.parts.6.customLabel>오른쪽 어깨</DRSKT_Body.corePart.parts.6.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.0.customLabel>오른쪽 clavicle</DRSKT_Body.corePart.parts.6.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.customLabel>오른쪽 팔</DRSKT_Body.corePart.parts.6.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.0.customLabel>오른쪽 상완골</DRSKT_Body.corePart.parts.6.parts.1.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.1.customLabel>오른쪽 요골</DRSKT_Body.corePart.parts.6.parts.1.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.customLabel>오른쪽 손</DRSKT_Body.corePart.parts.6.parts.1.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.0.customLabel>오른쪽 소지 손가락</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.1.customLabel>오른쪽 약지 손가락</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.2.customLabel>오른쪽 중지 손가락</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.3.customLabel>오른쪽 검지 손가락</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.3.customLabel>
+  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.4.customLabel>오른쪽 엄지 손가락</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.4.customLabel>
+  <DRSKT_Body.corePart.parts.8.customLabel>왼쪽 다리</DRSKT_Body.corePart.parts.8.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.0.customLabel>왼쪽 대퇴골</DRSKT_Body.corePart.parts.8.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.1.customLabel>왼쪽 경골</DRSKT_Body.corePart.parts.8.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.customLabel>왼쪽 발</DRSKT_Body.corePart.parts.8.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.0.customLabel>왼쪽 새끼 발가락</DRSKT_Body.corePart.parts.8.parts.2.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.1.customLabel>왼쪽 약지 발가락</DRSKT_Body.corePart.parts.8.parts.2.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.2.customLabel>왼쪽 장지 발가락</DRSKT_Body.corePart.parts.8.parts.2.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.3.customLabel>왼쪽 검지 발가락</DRSKT_Body.corePart.parts.8.parts.2.parts.3.customLabel>
+  <DRSKT_Body.corePart.parts.8.parts.2.parts.4.customLabel>왼쪽 엄지 발가락</DRSKT_Body.corePart.parts.8.parts.2.parts.4.customLabel>
+  <DRSKT_Body.corePart.parts.9.customLabel>오른쪽 다리</DRSKT_Body.corePart.parts.9.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.0.customLabel>오른쪽 대퇴골</DRSKT_Body.corePart.parts.9.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.1.customLabel>오른쪽 경골</DRSKT_Body.corePart.parts.9.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.customLabel>오른쪽 발</DRSKT_Body.corePart.parts.9.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.0.customLabel>오른쪽 새끼 발가락</DRSKT_Body.corePart.parts.9.parts.2.parts.0.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.1.customLabel>오른쪽 약지 발가락</DRSKT_Body.corePart.parts.9.parts.2.parts.1.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.2.customLabel>오른쪽 장지 발가락</DRSKT_Body.corePart.parts.9.parts.2.parts.2.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.3.customLabel>오른쪽 검지 발가락</DRSKT_Body.corePart.parts.9.parts.2.parts.3.customLabel>
+  <DRSKT_Body.corePart.parts.9.parts.2.parts.4.customLabel>오른쪽 엄지 발가락</DRSKT_Body.corePart.parts.9.parts.2.parts.4.customLabel>
+</LanguageData>

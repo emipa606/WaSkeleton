@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 플레이어펙션 -->
+
+  <DRSKT_Colonist.label>skeleton colonist</DRSKT_Colonist.label>
+  <DRSKT_Colonist.labelPlural>skeleton colonists</DRSKT_Colonist.labelPlural>
+  <DRSKT_Colonist.labelMale>male skeleton colonist</DRSKT_Colonist.labelMale>
+  <DRSKT_Colonist.labelMalePlural>male skeleton colonists</DRSKT_Colonist.labelMalePlural>
+  <DRSKT_Colonist.labelFemale>female skeleton colonist</DRSKT_Colonist.labelFemale>
+  <DRSKT_Colonist.labelFemalePlural>female skeleton colonists</DRSKT_Colonist.labelFemalePlural>
+
+
+</LanguageData>

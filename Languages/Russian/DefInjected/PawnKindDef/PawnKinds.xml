@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 플레이어펙션 -->
+  <DRSKT_Colonist.label>колонист скелет</DRSKT_Colonist.label>
+  <DRSKT_Colonist.labelPlural>колонисты скелеты</DRSKT_Colonist.labelPlural>
+  <DRSKT_Colonist.labelMale>колонист скелет мужского пола</DRSKT_Colonist.labelMale>
+  <DRSKT_Colonist.labelMalePlural>колонисты скелеты мужского пола</DRSKT_Colonist.labelMalePlural>
+  <DRSKT_Colonist.labelFemale>колонист скелет женского пола</DRSKT_Colonist.labelFemale>
+  <DRSKT_Colonist.labelFemalePlural>колонисты скелеты женского пола</DRSKT_Colonist.labelFemalePlural>
+</LanguageData>

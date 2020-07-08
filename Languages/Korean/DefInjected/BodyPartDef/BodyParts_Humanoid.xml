@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DRSKT_Torso.label>몸통</DRSKT_Torso.label>
+  <DRSKT_Shoulder.label>어깨</DRSKT_Shoulder.label>
+  <DRSKT_Arm.label>팔</DRSKT_Arm.label>
+  <DRSKT_Hand.label>손</DRSKT_Hand.label>
+  <DRSKT_Finger.label>손가락</DRSKT_Finger.label>
+  <DRSKT_Waist.label>허리</DRSKT_Waist.label>
+  <DRSKT_Toe.label>발가락</DRSKT_Toe.label>
+</LanguageData>

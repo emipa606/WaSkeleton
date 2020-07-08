@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--==================== Install artificial parts =======================-->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallPegLeg</defName>
+    <label>install peg leg</label>
+    <description>Install a peg leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing peg leg.</jobString>
+    <workAmount>1300</workAmount>
+    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PegLeg</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallWoodenFoot</defName>
+    <label>install wooden foot</label>
+    <description>Install a wooden foot.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing wooden foot.</jobString>
+    <workAmount>1000</workAmount>
+    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Foot</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WoodenFoot</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallSimpleProstheticLeg</defName>
+    <label>install prosthetic leg</label>
+    <description>Install a prosthetic leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing prosthetic leg.</jobString>
+    <workAmount>2000</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SimpleProstheticLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>SimpleProstheticLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SimpleProstheticLeg</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallSimpleProstheticArm</defName>
+    <label>install prosthetic arm</label>
+    <description>Install a prosthetic arm.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing prosthetic arm.</jobString>
+    <workAmount>2000</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SimpleProstheticArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>SimpleProstheticArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SimpleProstheticArm</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallBionicArm</defName>
+    <label>install bionic arm</label>
+    <description>Install a bionic arm.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic arm.</jobString>
+    <workAmount>2500</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>BionicArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicArm</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallBionicLeg</defName>
+    <label>install bionic leg</label>
+    <description>Install a bionic leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic leg.</jobString>
+    <workAmount>2500</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>BionicLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicLeg</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallArchotechArm</defName>
+    <label>install archotech arm</label>
+    <description>Install an archotech arm.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing archotech arm.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>ArchotechArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechArm</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallArchotechLeg</defName>
+    <label>install archotech leg</label>
+    <description>Install an archotech leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing archotech leg.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>ArchotechLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechLeg</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DRSKT_InstallPowerClaw</defName>
+    <label>install power claw</label>
+    <description>Install a power claw.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing power claw.</jobString>
+    <workAmount>2500</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PowerClaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>PowerClaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRSKT_Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PowerClaw</addsHediff>
+  </RecipeDef>
+</Defs>

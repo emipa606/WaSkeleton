@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DRSKT_Race.label>스켈레톤</DRSKT_Race.label>
+  <DRSKT_Race.description>오래전 죽은 사람이지만 알 수 없는 이유로 부활하여 돌아다니고 있습니다.</DRSKT_Race.description>
+  <DRSKT_Race.tools.0.label>왼쪽 주먹</DRSKT_Race.tools.0.label>
+  <DRSKT_Race.tools.1.label>오른쪽 주먹</DRSKT_Race.tools.1.label>
+  <DRSKT_Race.tools.2.label>머리</DRSKT_Race.tools.2.label>
+</LanguageData>
