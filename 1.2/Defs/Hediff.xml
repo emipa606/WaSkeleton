@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="ChronicDiseaseBase">
+    <defName>RessurectedFromTheDead</defName>
+    <label>ressurected</label>
+    <description>Returned from the eternal slumber, your body sluggish and slow to react. You crave no sleep, no food. 
+You only want to return to you grave, to rest again. But something brought you back against your will, you cannot rest.</description>
+    <everCurableByItem>false</everCurableByItem>
+    <comps>
+      <li Class="HediffCompProperties">
+        <compClass>Skeleton.HediffComp_RessurectionGlow</compClass>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

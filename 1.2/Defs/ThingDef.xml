@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>RessurectionGlow</defName>
+    <label>An unhealthy glow</label>
+    <thingClass>ThingWithComps</thingClass>
+    <selectable>false</selectable>
+    <graphicData>
+      <texPath>Glow/Empty</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(0,150,0,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

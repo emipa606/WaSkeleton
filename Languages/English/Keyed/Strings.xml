@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Ressurection messages -->
+  <ressurectMessage1>has come back from the dead!</ressurectMessage1>
+  <ressurectMessage2>is reanimated!</ressurectMessage2>
+  <ressurectMessage3>has awoken from their eternal sleep!</ressurectMessage3>
+  <ressurectMessage4>is awake once again!</ressurectMessage4>
+  <ressurectMessage5>has been brought back as an undead!</ressurectMessage5>
+  <!-- Settings -->
+  <ExplodeOnDeath_Label>Skeletons explode on death</ExplodeOnDeath_Label>
+  <ExplodeOnDeath_Tooltip>Instead of dying peacefully, the corpses will explode</ExplodeOnDeath_Tooltip>
+  <ReanimateCorpses_Label>Corpses can reanimate at night</ReanimateCorpses_Label>
+  <ReanimateCorpses_Tooltip>Corpses have a chance of reanimating as skeletons during the night</ReanimateCorpses_Tooltip>
+  <OnlyBuried_Label>Only reanimate buried corpses</OnlyBuried_Label>
+  <OnlyBuried_Tooltip>Only corpses that have been buried will have a chance of coming back as skeletons</OnlyBuried_Tooltip>
+  <OnlyColonists_Label>Only colonist corpses can reanimate</OnlyColonists_Label>
+  <OnlyColonists_Tooltip>Only corpses of died colonists can come back as skeletons</OnlyColonists_Tooltip>
+
+</LanguageData>
