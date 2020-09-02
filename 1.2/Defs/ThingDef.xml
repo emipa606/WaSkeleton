@@ -2,18 +2,25 @@
 <Defs>
   <ThingDef>
     <defName>RessurectionGlow</defName>
-    <label>An unhealthy glow</label>
+    <label>Not used anymore</label>
     <thingClass>ThingWithComps</thingClass>
     <selectable>false</selectable>
     <graphicData>
       <texPath>Glow/Empty</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <comps>
-      <li Class="CompProperties_Glower">
-        <glowRadius>2</glowRadius>
-        <glowColor>(0,150,0,0)</glowColor>
-      </li>
-    </comps>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_RessurectionGlow</defName>
+    <graphicData>
+      <texPath>Glow/Green</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.5</fadeInTime>
+      <solidTime>0.5</solidTime>
+      <fadeOutTime>0.5</fadeOutTime>
+    </mote>
   </ThingDef>
 </Defs>

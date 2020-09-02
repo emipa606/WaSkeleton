@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Linq;
 using Verse;
 
 namespace Skeleton
@@ -8,29 +9,22 @@ namespace Skeleton
         private int ticks = 0;
         private Thing light;
 
-
-        public override void CompPostPostRemoved()
-        {
-            base.CompPostPostRemoved();
-            if (light != null) light.Destroy();
-        }
-
         public override void CompPostTick(ref float severityAdjustment)
         {
             base.CompPostTick(ref severityAdjustment);
-            if(Pawn.Map == null)
+            if (light != null)
             {
-                if (light != null)
-                {
-                    light.Destroy();
-                    light = null;
-                }
+                light.Destroy();
+                light = null;
+            }
+            if (Pawn.Map == null)
+            {
                 return;
             }
-            if (ticks >= 5 && light?.Position != Pawn.Position)
+            if (ticks > 25)
             {
-                if (light != null) light.Destroy();
-                light = GenSpawn.Spawn(ThingDef.Named("RessurectionGlow"), Pawn.Position, Pawn.Map);
+                var moteDef = (from mote in DefDatabase<ThingDef>.AllDefsListForReading where mote.defName == "Mote_RessurectionGlow" select mote).FirstOrDefault();
+                MoteMaker.MakeStaticMote(Pawn.TrueCenter(), Pawn.Map, moteDef, 2);
                 ticks = 0;
             }
             ticks++;
