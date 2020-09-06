@@ -150,7 +150,7 @@ namespace Skeleton
             }
 
             //Log.Message($"WaSkeleton: Setting hostility response");
-            if(corpse.InnerPawn.Faction.IsPlayer)
+            if (corpse.InnerPawn.Faction != null && corpse.InnerPawn.Faction.IsPlayer)
             {
                 newPawn.playerSettings.hostilityResponse = HostilityResponseMode.Attack;
             }
