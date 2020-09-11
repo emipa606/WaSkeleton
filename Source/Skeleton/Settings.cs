@@ -8,6 +8,7 @@ namespace Skeleton
     internal class SkeletonSettings : ModSettings
     {
         public bool ExplodeOnDeath = true;
+        public bool AddHediffToAll = false;
         public bool ReanimateCorpses = false;
         public bool OnlyBuried = false;
         public bool OnlyColonists = false;
@@ -19,6 +20,7 @@ namespace Skeleton
         {
             base.ExposeData();
             Scribe_Values.Look(ref ExplodeOnDeath, "ExplodeOnDeath", true, false);
+            Scribe_Values.Look(ref AddHediffToAll, "AddHediffToAll", false, false);
             Scribe_Values.Look(ref ReanimateCorpses, "ReanimateCorpses", false, false);
             Scribe_Values.Look(ref OnlyBuried, "OnlyBuried", false, false);
             Scribe_Values.Look(ref OnlyColonists, "OnlyColonists", false, false);

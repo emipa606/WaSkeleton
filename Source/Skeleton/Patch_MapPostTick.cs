@@ -14,14 +14,15 @@ namespace Skeleton
 		[HarmonyPrefix]
 		private static void Postfix(ref Map __instance)
 		{
+			if (Find.TickManager.TicksGame % GenTicks.TickLongInterval != 0)
+            {
+				return;
+			}
+			Skeleton.ScanMapsForUnaffectedSkeletons();
 			if (!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().ReanimateCorpses)
 			{
 				return;
 			}
-			if (Find.TickManager.TicksGame % GenTicks.TickLongInterval != 0)
-            {
-				return;
-            }
 			if(!Skeleton.IsNightTime(__instance))
             {
 				return;

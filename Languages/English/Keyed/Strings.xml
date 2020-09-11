@@ -9,6 +9,8 @@
   <!-- Settings -->
   <ExplodeOnDeath_Label>Skeletons explode on death</ExplodeOnDeath_Label>
   <ExplodeOnDeath_Tooltip>Instead of dying peacefully, the corpses will explode</ExplodeOnDeath_Tooltip>
+  <AddHediffToAll_Label>Add reanimated hediff to all skeletons</AddHediffToAll_Label>
+  <AddHediffToAll_Tooltip>Also random spawning skeletons will have the Ressurected-hediff</AddHediffToAll_Tooltip>
   <ReanimateCorpses_Label>Corpses can reanimate at night</ReanimateCorpses_Label>
   <ReanimateCorpses_Tooltip>Corpses have a chance of reanimating as skeletons during the night</ReanimateCorpses_Tooltip>
   <OnlyBuried_Label>Only reanimate buried corpses</OnlyBuried_Label>

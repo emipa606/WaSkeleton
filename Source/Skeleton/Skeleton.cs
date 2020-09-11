@@ -90,6 +90,10 @@ namespace Skeleton
 
         public static void ScanMapsForCorpses()
         {
+            if (!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().ReanimateCorpses)
+            {
+                return;
+            }
             if (Prefs.DevMode)
                 Log.Message($"WaSkeleton: cleared the valid corpses-list.");
             validCorpses.Clear();
@@ -122,6 +126,29 @@ namespace Skeleton
                 Log.Message($"WaSkeleton: Added {validCorpses.Count()} corpses to the valid corpse list.");
         }
 
+        public static void ScanMapsForUnaffectedSkeletons()
+        {
+            if (!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().AddHediffToAll)
+            {
+                return;
+            }
+            if (Current.Game == null)
+            {
+                return;
+            }
+            HediffDef ressurected = (from hediff in DefDatabase<HediffDef>.AllDefsListForReading where hediff.defName == "RessurectedFromTheDead" select hediff).First();
+            foreach (var map in Current.Game.Maps)
+            {
+                foreach (var pawn in from thing in map.listerThings.AllThings where thing != null && thing.def.defName == "DRSKT_Race" && !((Pawn)thing).health.Dead select thing as Pawn)
+                {
+                    if (!pawn.health.hediffSet.HasHediff(ressurected))
+                    {
+                        Hediff hediffToAdd = HediffMaker.MakeHediff(ressurected, pawn, null);
+                        pawn.health.AddHediff(hediffToAdd);
+                    }
+                }
+            }
+        }
         private static readonly PawnKindDef skeletonPawnKind = (from pawnKindDef in DefDatabase<PawnKindDef>.AllDefsListForReading where pawnKindDef.defName == "DRSKT_Colonist" select pawnKindDef).FirstOrDefault();
 
         private static readonly List<TaggedString> ressurectMessages = new List<TaggedString>

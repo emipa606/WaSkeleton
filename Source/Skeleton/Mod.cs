@@ -54,6 +54,7 @@ namespace Skeleton
             listing_Standard.Begin(rect);
             listing_Standard.Gap();
             listing_Standard.CheckboxLabeled("ExplodeOnDeath_Label".Translate(), ref Settings.ExplodeOnDeath, "ExplodeOnDeath_Tooltip".Translate());
+            listing_Standard.CheckboxLabeled("AddHediffToAll_Label".Translate(), ref Settings.AddHediffToAll, "AddHediffToAll_Tooltip".Translate());
             listing_Standard.CheckboxLabeled("ReanimateCorpses_Label".Translate(), ref Settings.ReanimateCorpses, "ReanimateCorpses_Tooltip".Translate());
             if (Settings.ReanimateCorpses)
             {
@@ -66,11 +67,8 @@ namespace Skeleton
         public override void WriteSettings()
         {
             base.WriteSettings();
-            if (!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().ReanimateCorpses)
-            {
-                return;
-            }
             Skeleton.ScanMapsForCorpses();
+            Skeleton.ScanMapsForUnaffectedSkeletons();
         }
 
         /// <summary>
