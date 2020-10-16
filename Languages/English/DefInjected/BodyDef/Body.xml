@@ -1,47 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <DRSKT_Body.label>skeleton</DRSKT_Body.label>
-  <DRSKT_Body.corePart.parts.5.customLabel>left shoulder</DRSKT_Body.corePart.parts.5.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.0.customLabel>left clavicle</DRSKT_Body.corePart.parts.5.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.customLabel>left arm</DRSKT_Body.corePart.parts.5.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.parts.0.customLabel>left humerus</DRSKT_Body.corePart.parts.5.parts.1.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.parts.1.customLabel>left radius</DRSKT_Body.corePart.parts.5.parts.1.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.customLabel>left hand</DRSKT_Body.corePart.parts.5.parts.1.parts.2.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.0.customLabel>left pinky</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.1.customLabel>left ring finger</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.2.customLabel>left middle finger</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.2.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.3.customLabel>left index finger</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.3.customLabel>
-  <DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.4.customLabel>left thumb</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.4.customLabel>
-  <DRSKT_Body.corePart.parts.6.customLabel>right shoulder</DRSKT_Body.corePart.parts.6.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.0.customLabel>right clavicle</DRSKT_Body.corePart.parts.6.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.customLabel>right arm</DRSKT_Body.corePart.parts.6.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.parts.0.customLabel>right humerus</DRSKT_Body.corePart.parts.6.parts.1.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.parts.1.customLabel>right radius</DRSKT_Body.corePart.parts.6.parts.1.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.customLabel>right hand</DRSKT_Body.corePart.parts.6.parts.1.parts.2.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.0.customLabel>right pinky</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.1.customLabel>right ring finger</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.2.customLabel>right middle finger</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.2.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.3.customLabel>right index finger</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.3.customLabel>
-  <DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.4.customLabel>right thumb</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.4.customLabel>
-  <DRSKT_Body.corePart.parts.8.customLabel>left leg</DRSKT_Body.corePart.parts.8.customLabel>
-  <DRSKT_Body.corePart.parts.8.parts.0.customLabel>left femur</DRSKT_Body.corePart.parts.8.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.8.parts.1.customLabel>left tibia</DRSKT_Body.corePart.parts.8.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.8.parts.2.customLabel>left foot</DRSKT_Body.corePart.parts.8.parts.2.customLabel>
-  <DRSKT_Body.corePart.parts.8.parts.2.parts.0.customLabel>left little toe</DRSKT_Body.corePart.parts.8.parts.2.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.8.parts.2.parts.1.customLabel>left fourth toe</DRSKT_Body.corePart.parts.8.parts.2.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.8.parts.2.parts.2.customLabel>left middle toe</DRSKT_Body.corePart.parts.8.parts.2.parts.2.customLabel>
-  <DRSKT_Body.corePart.parts.8.parts.2.parts.3.customLabel>left second toe</DRSKT_Body.corePart.parts.8.parts.2.parts.3.customLabel>
-  <DRSKT_Body.corePart.parts.8.parts.2.parts.4.customLabel>left big toe</DRSKT_Body.corePart.parts.8.parts.2.parts.4.customLabel>
-  <DRSKT_Body.corePart.parts.9.customLabel>right leg</DRSKT_Body.corePart.parts.9.customLabel>
-  <DRSKT_Body.corePart.parts.9.parts.0.customLabel>right femur</DRSKT_Body.corePart.parts.9.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.9.parts.1.customLabel>right tibia</DRSKT_Body.corePart.parts.9.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.9.parts.2.customLabel>right foot</DRSKT_Body.corePart.parts.9.parts.2.customLabel>
-  <DRSKT_Body.corePart.parts.9.parts.2.parts.0.customLabel>right little toe</DRSKT_Body.corePart.parts.9.parts.2.parts.0.customLabel>
-  <DRSKT_Body.corePart.parts.9.parts.2.parts.1.customLabel>right fourth toe</DRSKT_Body.corePart.parts.9.parts.2.parts.1.customLabel>
-  <DRSKT_Body.corePart.parts.9.parts.2.parts.2.customLabel>right middle toe</DRSKT_Body.corePart.parts.9.parts.2.parts.2.customLabel>
-  <DRSKT_Body.corePart.parts.9.parts.2.parts.3.customLabel>right second toe</DRSKT_Body.corePart.parts.9.parts.2.parts.3.customLabel>
-  <DRSKT_Body.corePart.parts.9.parts.2.parts.4.customLabel>right big toe</DRSKT_Body.corePart.parts.9.parts.2.parts.4.customLabel>
-
+  <!--<DRSKT_Body.label>skeleton</DRSKT_Body.label>-->
+  <!--<DRSKT_Body.corePart.parts.5.customLabel>left shoulder</DRSKT_Body.corePart.parts.5.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.0.customLabel>left clavicle</DRSKT_Body.corePart.parts.5.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.customLabel>left arm</DRSKT_Body.corePart.parts.5.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.parts.0.customLabel>left humerus</DRSKT_Body.corePart.parts.5.parts.1.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.parts.1.customLabel>left radius</DRSKT_Body.corePart.parts.5.parts.1.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.parts.2.customLabel>left hand</DRSKT_Body.corePart.parts.5.parts.1.parts.2.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.0.customLabel>left pinky</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.1.customLabel>left ring finger</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.2.customLabel>left middle finger</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.2.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.3.customLabel>left index finger</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.3.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.4.customLabel>left thumb</DRSKT_Body.corePart.parts.5.parts.1.parts.2.parts.4.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.customLabel>right shoulder</DRSKT_Body.corePart.parts.6.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.0.customLabel>right clavicle</DRSKT_Body.corePart.parts.6.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.customLabel>right arm</DRSKT_Body.corePart.parts.6.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.parts.0.customLabel>right humerus</DRSKT_Body.corePart.parts.6.parts.1.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.parts.1.customLabel>right radius</DRSKT_Body.corePart.parts.6.parts.1.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.parts.2.customLabel>right hand</DRSKT_Body.corePart.parts.6.parts.1.parts.2.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.0.customLabel>right pinky</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.1.customLabel>right ring finger</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.2.customLabel>right middle finger</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.2.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.3.customLabel>right index finger</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.3.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.4.customLabel>right thumb</DRSKT_Body.corePart.parts.6.parts.1.parts.2.parts.4.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.customLabel>left leg</DRSKT_Body.corePart.parts.8.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.parts.0.customLabel>left femur</DRSKT_Body.corePart.parts.8.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.parts.1.customLabel>left tibia</DRSKT_Body.corePart.parts.8.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.parts.2.customLabel>left foot</DRSKT_Body.corePart.parts.8.parts.2.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.parts.2.parts.0.customLabel>left little toe</DRSKT_Body.corePart.parts.8.parts.2.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.parts.2.parts.1.customLabel>left fourth toe</DRSKT_Body.corePart.parts.8.parts.2.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.parts.2.parts.2.customLabel>left middle toe</DRSKT_Body.corePart.parts.8.parts.2.parts.2.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.parts.2.parts.3.customLabel>left second toe</DRSKT_Body.corePart.parts.8.parts.2.parts.3.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.8.parts.2.parts.4.customLabel>left big toe</DRSKT_Body.corePart.parts.8.parts.2.parts.4.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.customLabel>right leg</DRSKT_Body.corePart.parts.9.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.parts.0.customLabel>right femur</DRSKT_Body.corePart.parts.9.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.parts.1.customLabel>right tibia</DRSKT_Body.corePart.parts.9.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.parts.2.customLabel>right foot</DRSKT_Body.corePart.parts.9.parts.2.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.parts.2.parts.0.customLabel>right little toe</DRSKT_Body.corePart.parts.9.parts.2.parts.0.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.parts.2.parts.1.customLabel>right fourth toe</DRSKT_Body.corePart.parts.9.parts.2.parts.1.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.parts.2.parts.2.customLabel>right middle toe</DRSKT_Body.corePart.parts.9.parts.2.parts.2.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.parts.2.parts.3.customLabel>right second toe</DRSKT_Body.corePart.parts.9.parts.2.parts.3.customLabel>-->
+  <!--<DRSKT_Body.corePart.parts.9.parts.2.parts.4.customLabel>right big toe</DRSKT_Body.corePart.parts.9.parts.2.parts.4.customLabel>-->
 
 </LanguageData>

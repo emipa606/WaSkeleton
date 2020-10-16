@@ -43,6 +43,27 @@
       <hairSettings>
         <hasHair>false</hasHair>
       </hairSettings>
+      <thoughtSettings>
+        <cannotReceiveThoughts>
+          <li>ObservedLayingCorpse</li>
+          <li>ObservedLayingRottingCorpse</li>
+          <li>EnvironmentDark</li>
+          <li>ApparelDamaged</li>
+          <li>DeadMansApparel</li>
+          <li>HumanLeatherApparelSad</li>
+          <li>HumanLeatherApparelHappy</li>
+          <li>EnvironmentCold</li>
+          <li>EnvironmentHot</li>
+          <li>NeedFood</li>
+          <li>NeedRest</li>
+          <li>ColonistLeftUnburied</li>
+          <li>Naked</li>
+          <li>Pain</li>
+          <li>MasochistPain</li>
+          <li>ClothedNudist</li>
+          <li>HappyNude</li>
+        </cannotReceiveThoughts>
+      </thoughtSettings>
     </alienRace>
     <!--=============================================================================================================================-->
     <statBases>

@@ -1,43 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Install artificial parts -->
-
-  <DRSKT_InstallPegLeg.label>install peg leg</DRSKT_InstallPegLeg.label>
-  <DRSKT_InstallPegLeg.description>Install a peg leg.</DRSKT_InstallPegLeg.description>
-  <DRSKT_InstallPegLeg.jobString>Installing peg leg.</DRSKT_InstallPegLeg.jobString>
-
-  <DRSKT_InstallWoodenFoot.label>install wooden foot</DRSKT_InstallWoodenFoot.label>
-  <DRSKT_InstallWoodenFoot.description>Install a wooden foot.</DRSKT_InstallWoodenFoot.description>
-  <DRSKT_InstallWoodenFoot.jobString>Installing wooden foot.</DRSKT_InstallWoodenFoot.jobString>
-
-  <DRSKT_InstallSimpleProstheticLeg.label>install prosthetic leg</DRSKT_InstallSimpleProstheticLeg.label>
-  <DRSKT_InstallSimpleProstheticLeg.description>Install a prosthetic leg.</DRSKT_InstallSimpleProstheticLeg.description>
-  <DRSKT_InstallSimpleProstheticLeg.jobString>Installing prosthetic leg.</DRSKT_InstallSimpleProstheticLeg.jobString>
-
-  <DRSKT_InstallSimpleProstheticArm.label>install prosthetic arm</DRSKT_InstallSimpleProstheticArm.label>
-  <DRSKT_InstallSimpleProstheticArm.description>Install a prosthetic arm.</DRSKT_InstallSimpleProstheticArm.description>
-  <DRSKT_InstallSimpleProstheticArm.jobString>Installing prosthetic arm.</DRSKT_InstallSimpleProstheticArm.jobString>
-
-  <DRSKT_InstallBionicArm.label>install bionic arm</DRSKT_InstallBionicArm.label>
-  <DRSKT_InstallBionicArm.description>Install a bionic arm.</DRSKT_InstallBionicArm.description>
-  <DRSKT_InstallBionicArm.jobString>Installing bionic arm.</DRSKT_InstallBionicArm.jobString>
-
-  <DRSKT_InstallBionicLeg.label>install bionic leg</DRSKT_InstallBionicLeg.label>
-  <DRSKT_InstallBionicLeg.description>Install a bionic leg.</DRSKT_InstallBionicLeg.description>
-  <DRSKT_InstallBionicLeg.jobString>Installing bionic leg.</DRSKT_InstallBionicLeg.jobString>
-
-  <DRSKT_InstallArchotechArm.label>install archotech arm</DRSKT_InstallArchotechArm.label>
-  <DRSKT_InstallArchotechArm.description>Install an archotech arm.</DRSKT_InstallArchotechArm.description>
-  <DRSKT_InstallArchotechArm.jobString>Installing archotech arm.</DRSKT_InstallArchotechArm.jobString>
-
-  <DRSKT_InstallArchotechLeg.label>install archotech leg</DRSKT_InstallArchotechLeg.label>
-  <DRSKT_InstallArchotechLeg.description>Install an archotech leg.</DRSKT_InstallArchotechLeg.description>
-  <DRSKT_InstallArchotechLeg.jobString>Installing archotech leg.</DRSKT_InstallArchotechLeg.jobString>
-
-  <DRSKT_InstallPowerClaw.label>install power claw</DRSKT_InstallPowerClaw.label>
-  <DRSKT_InstallPowerClaw.description>Install a power claw.</DRSKT_InstallPowerClaw.description>
-  <DRSKT_InstallPowerClaw.jobString>Installing power claw.</DRSKT_InstallPowerClaw.jobString>
-
+  <!--<DRSKT_InstallPegLeg.label>install peg leg</DRSKT_InstallPegLeg.label>-->
+  <!--<DRSKT_InstallPegLeg.description>Install a peg leg.</DRSKT_InstallPegLeg.description>-->
+  <!--<DRSKT_InstallPegLeg.jobString>Installing peg leg.</DRSKT_InstallPegLeg.jobString>-->
+  <!--<DRSKT_InstallWoodenFoot.label>install wooden foot</DRSKT_InstallWoodenFoot.label>-->
+  <!--<DRSKT_InstallWoodenFoot.description>Install a wooden foot.</DRSKT_InstallWoodenFoot.description>-->
+  <!--<DRSKT_InstallWoodenFoot.jobString>Installing wooden foot.</DRSKT_InstallWoodenFoot.jobString>-->
+  <!--<DRSKT_InstallSimpleProstheticLeg.label>install prosthetic leg</DRSKT_InstallSimpleProstheticLeg.label>-->
+  <!--<DRSKT_InstallSimpleProstheticLeg.description>Install a prosthetic leg.</DRSKT_InstallSimpleProstheticLeg.description>-->
+  <!--<DRSKT_InstallSimpleProstheticLeg.jobString>Installing prosthetic leg.</DRSKT_InstallSimpleProstheticLeg.jobString>-->
+  <!--<DRSKT_InstallSimpleProstheticArm.label>install prosthetic arm</DRSKT_InstallSimpleProstheticArm.label>-->
+  <!--<DRSKT_InstallSimpleProstheticArm.description>Install a prosthetic arm.</DRSKT_InstallSimpleProstheticArm.description>-->
+  <!--<DRSKT_InstallSimpleProstheticArm.jobString>Installing prosthetic arm.</DRSKT_InstallSimpleProstheticArm.jobString>-->
+  <!--<DRSKT_InstallBionicArm.label>install bionic arm</DRSKT_InstallBionicArm.label>-->
+  <!--<DRSKT_InstallBionicArm.description>Install a bionic arm.</DRSKT_InstallBionicArm.description>-->
+  <!--<DRSKT_InstallBionicArm.jobString>Installing bionic arm.</DRSKT_InstallBionicArm.jobString>-->
+  <!--<DRSKT_InstallBionicLeg.label>install bionic leg</DRSKT_InstallBionicLeg.label>-->
+  <!--<DRSKT_InstallBionicLeg.description>Install a bionic leg.</DRSKT_InstallBionicLeg.description>-->
+  <!--<DRSKT_InstallBionicLeg.jobString>Installing bionic leg.</DRSKT_InstallBionicLeg.jobString>-->
+  <!--<DRSKT_InstallArchotechArm.label>install archotech arm</DRSKT_InstallArchotechArm.label>-->
+  <!--<DRSKT_InstallArchotechArm.description>Install an archotech arm.</DRSKT_InstallArchotechArm.description>-->
+  <!--<DRSKT_InstallArchotechArm.jobString>Installing archotech arm.</DRSKT_InstallArchotechArm.jobString>-->
+  <!--<DRSKT_InstallArchotechLeg.label>install archotech leg</DRSKT_InstallArchotechLeg.label>-->
+  <!--<DRSKT_InstallArchotechLeg.description>Install an archotech leg.</DRSKT_InstallArchotechLeg.description>-->
+  <!--<DRSKT_InstallArchotechLeg.jobString>Installing archotech leg.</DRSKT_InstallArchotechLeg.jobString>-->
+  <!--<DRSKT_InstallPowerClaw.label>install power claw</DRSKT_InstallPowerClaw.label>-->
+  <!--<DRSKT_InstallPowerClaw.description>Install a power claw.</DRSKT_InstallPowerClaw.description>-->
+  <!--<DRSKT_InstallPowerClaw.jobString>Installing power claw.</DRSKT_InstallPowerClaw.jobString>-->
 
 </LanguageData>

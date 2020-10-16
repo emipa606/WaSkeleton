@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>RessurectionGlow</defName>
+    <label>Not used anymore</label>
+    <thingClass>ThingWithComps</thingClass>
+    <selectable>false</selectable>
+    <graphicData>
+      <texPath>Glow/Empty</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_RessurectionGlow</defName>
+    <graphicData>
+      <texPath>Glow/Green</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.5</fadeInTime>
+      <solidTime>0.5</solidTime>
+      <fadeOutTime>0.5</fadeOutTime>
+    </mote>
+  </ThingDef>
+</Defs>
