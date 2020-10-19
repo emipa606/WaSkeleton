@@ -83,7 +83,7 @@ namespace Skeleton
             corpse.InnerPawn.apparel.GetDirectlyHeldThings().TryTransferAllToContainer(pawnToRessurect.apparel.GetDirectlyHeldThings());
             //Log.Message($"WaSkeleton: Removing corpse from list");
             validCorpses.Remove(corpse);
-            SendRessurectionMessage(corpse.InnerPawn);
+            SendRessurectionMessage(pawnToRessurect);
             //Log.Message($"WaSkeleton: Removing corpse from map");
             corpse.Destroy(DestroyMode.Vanish);
         }
