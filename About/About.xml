@@ -20,18 +20,26 @@
   <loadAfter>
     <li>erdelf.HumanoidAlienRaces</li>
   </loadAfter>
-  <description>Update of Dalraes mod
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Dalraes mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1627043991
 
-[img]https://i.imgur.com/GYswkZ7.png[/img]
+- Added an option to turn of the death-explosions
+- Added an option to reanimate dead pawns as skeletons
+- Added option to add the ressurected-hediff to all skeletons, as in guests, starting pawns and others.
+- Reanimation can be selective to only colonists or only buried pawns
 
-Support-chat:
-https://invite.gg/mlie
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
-Non-steam version:
-https://github.com/emipa606/WaSkeleton
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/WaSkeleton][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
 120% compatible with vanilla
 
 Add a Skeleton Race.
@@ -46,5 +54,5 @@ Languages: English, Korean, Russian
 
 2019/1/17 - no more need sleep
 
-2019/1/25 - add russian translation (thanks ?4ecHoK?)</description>
+2019/1/25 - add russian translation (thanks ✿4ecHoK❀)</description>
 </ModMetaData>

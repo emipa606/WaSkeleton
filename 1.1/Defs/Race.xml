@@ -64,6 +64,17 @@
           <li>HappyNude</li>
         </cannotReceiveThoughts>
       </thoughtSettings>
+      <disallowedTraits>
+        <li>
+          <defname>NightOwl</defname>
+        </li>
+        <li>
+          <defname>Gourmand</defname>
+        </li>
+        <li>
+          <defname>DrugDesire</defname>
+        </li>
+      </disallowedTraits>
     </alienRace>
     <!--=============================================================================================================================-->
     <statBases>

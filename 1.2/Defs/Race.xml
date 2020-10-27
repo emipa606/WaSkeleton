@@ -3,7 +3,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>DRSKT_Race</defName>
     <label>Skeleton</label>
-    <description>오래전 죽은 사람이지만 알 수 없는 이유로 부활하여 돌아다니고 있습니다.</description>
+    <description>Although died some time ago, now resurrected and wandering around for an unknown reason.</description>
     <!--=============================================================================================================================-->
     <alienRace>
       <generalSettings>
@@ -36,6 +36,17 @@
             </li>
           </colorChannels>
         </alienPartGenerator>
+        <disallowedTraits>
+          <li>
+            <defName>NightOwl</defName>
+          </li>
+          <li>
+            <defName>Gourmand</defName>
+          </li>
+          <li>
+            <defName>DrugDesire</defName>
+          </li>
+        </disallowedTraits>
       </generalSettings>
       <!--=============================================================================================================================-->
       <graphicPaths>
