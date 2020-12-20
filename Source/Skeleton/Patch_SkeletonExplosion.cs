@@ -13,21 +13,15 @@ namespace Skeleton
 		[HarmonyPrefix]
 		private static bool Prefix(ref Corpse corpse)
 		{
-			if(!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().ExplodeOnDeath)
-            {
-				return true;
-            }
-			bool flag = corpse.def.defName == "Corpse_DRSKT_Race";
-			if (flag)
+            if (corpse.def.defName == "Corpse_DRSKT_Race")
 			{
-				GenExplosion.DoExplosion(corpse.Position, corpse.Map, 0.9f, DamageDefOf.Flame, corpse.InnerPawn, 100, 1f, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
-				ExplosionDef.SkeletonEXPLOSION = false;
+				if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().ExplodeOnDeath)
+				{
+					GenExplosion.DoExplosion(corpse.Position, corpse.Map, 0.9f, DamageDefOf.Flame, corpse.InnerPawn, 100, 1f, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
+				}
+				return false;
 			}
-			else
-			{
-				ExplosionDef.SkeletonEXPLOSION = true;
-			}
-			return ExplosionDef.SkeletonEXPLOSION;
+			return true;
 		}
 	}
 }

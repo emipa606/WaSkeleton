@@ -28,10 +28,7 @@ namespace Skeleton
                 }
                 return settings;
             }
-            set
-            {
-                settings = value;
-            }
+            set => settings = value;
         }
 
         /// <summary>
@@ -50,7 +47,7 @@ namespace Skeleton
         /// <param name="rect"></param>
         public override void DoSettingsWindowContents(Rect rect)
         {
-            Listing_Standard listing_Standard = new Listing_Standard();
+            var listing_Standard = new Listing_Standard();
             listing_Standard.Begin(rect);
             listing_Standard.Gap();
             listing_Standard.CheckboxLabeled("ExplodeOnDeath_Label".Translate(), ref Settings.ExplodeOnDeath, "ExplodeOnDeath_Tooltip".Translate());

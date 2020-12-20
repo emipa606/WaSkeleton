@@ -17,7 +17,7 @@ namespace Skeleton
             {
                 return true;
             }
-            Traverse traverse = Traverse.Create(__instance);
+            var traverse = Traverse.Create(__instance);
             NeedDef need = traverse.Field("need").GetValue<NeedDef>();
             if(need != NeedDefOf.Food)
             {

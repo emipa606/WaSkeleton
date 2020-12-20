@@ -12,7 +12,7 @@ namespace Skeleton
     {
         public static void Postfix(Pawn_NeedsTracker __instance)
         {
-            Traverse traverse = Traverse.Create(__instance);
+            var traverse = Traverse.Create(__instance);
             Pawn pawn = traverse.Field("pawn").GetValue<Pawn>();
             if (pawn.kindDef.race.defName != "DRSKT_Race")
             {

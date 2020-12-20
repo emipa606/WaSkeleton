@@ -65,7 +65,7 @@ namespace Skeleton
                 cellToRessurectOn = grave.TrueCenter().ToIntVec3();
             }
             var pawnToRessurect = GeneratePawn(corpse);
-            if(grave != null)
+            if(grave != null && grave.GetDirectlyHeldThings().Count == 1)
             {
                 //Log.Message($"WaSkeleton: Updating grave");
                 grave.EjectContents();
@@ -95,7 +95,10 @@ namespace Skeleton
                 return;
             }
             if (Prefs.DevMode)
+            {
                 Log.Message($"WaSkeleton: cleared the valid corpses-list.");
+            }
+
             validCorpses.Clear();
             if(Current.Game == null)
             {
@@ -123,7 +126,9 @@ namespace Skeleton
                 }
             }
             if (Prefs.DevMode && validCorpses.Count() > 0)
+            {
                 Log.Message($"WaSkeleton: Added {validCorpses.Count()} corpses to the valid corpse list.");
+            }
         }
 
         public static void ScanMapsForUnaffectedSkeletons()
@@ -163,7 +168,7 @@ namespace Skeleton
         private static Pawn GeneratePawn(Corpse corpse)
         {
             //Log.Message($"WaSkeleton: Generating request");
-            PawnGenerationRequest request = new PawnGenerationRequest(skeletonPawnKind, corpse.InnerPawn.Faction, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 0, false, true, false, false, false, false, false, false, 0, null, 1, null, null, null, null, null, null, null, corpse.InnerPawn.gender, null);
+            var request = new PawnGenerationRequest(skeletonPawnKind, corpse.InnerPawn.Faction, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 0, false, true, false, false, false, false, false, false, 0, null, 1, null, null, null, null, null, null, null, corpse.InnerPawn.gender, null);
             //Log.Message($"WaSkeleton: Generating pawn of kind {skeletonPawnKind}");
             Pawn newPawn = PawnGenerator.GeneratePawn(request);
             //Log.Message($"WaSkeleton: Setting properties");
@@ -204,7 +209,7 @@ namespace Skeleton
 
         public static bool IsNightTime(Map p)
         {
-            return (GenLocalDate.HourInteger(p) >= 23 || GenLocalDate.HourInteger(p) <= 5);
+            return GenLocalDate.HourInteger(p) >= 23 || GenLocalDate.HourInteger(p) <= 5;
         }
     }
 

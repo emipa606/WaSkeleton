@@ -24,9 +24,11 @@ namespace Skeleton
 			if(Skeleton.IsCorpseValid(__instance))
             {
 				Skeleton.validCorpses.Add(__instance);
-				if(Prefs.DevMode) 
-					Log.Message($"WaSkeleton: Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid corpse list.");
-			}
+				if(Prefs.DevMode)
+                {
+                    Log.Message($"WaSkeleton: Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid corpse list.");
+                }
+            }
 		}
 	}
 }
