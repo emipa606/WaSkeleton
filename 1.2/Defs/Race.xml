@@ -221,6 +221,11 @@
       <li>DRSKT_InstallArchotechArm</li>
       <li>DRSKT_InstallArchotechLeg</li>
       <li>DRSKT_InstallPowerClaw</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>Euthanize</li>
+      <li>CureScaria</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
     </recipes>
   </AlienRace.ThingDef_AlienRace>
 </Defs>
