@@ -17,4 +17,8 @@
   <OnlyBuried_Tooltip>Only corpses that have been buried will have a chance of coming back as skeletons</OnlyBuried_Tooltip>
   <OnlyColonists_Label>Only colonist corpses can reanimate</OnlyColonists_Label>
   <OnlyColonists_Tooltip>Only corpses of died colonists can come back as skeletons</OnlyColonists_Tooltip>
+  <OnlyNonBuried_Label>Only reanimate non-buried corpses</OnlyNonBuried_Label>
+  <OnlyNonBuried_Tooltip>Only corpses that have not been buried will have a chance of coming back as skeletons</OnlyNonBuried_Tooltip>
+  <OnlyNonColonists_Label>Only non-colonist corpses can reanimate</OnlyNonColonists_Label>
+  <OnlyNonColonists_Tooltip>Only corpses of died non-colonists can come back as skeletons</OnlyNonColonists_Tooltip>
 </LanguageData>

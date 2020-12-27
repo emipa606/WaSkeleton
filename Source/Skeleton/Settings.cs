@@ -11,7 +11,9 @@ namespace Skeleton
         public bool AddHediffToAll = false;
         public bool ReanimateCorpses = false;
         public bool OnlyBuried = false;
+        public bool OnlyNonBuried = false;
         public bool OnlyColonists = false;
+        public bool OnlyNonColonists = false;
 
         /// <summary>
         /// Saving and loading the values
@@ -23,7 +25,9 @@ namespace Skeleton
             Scribe_Values.Look(ref AddHediffToAll, "AddHediffToAll", false, false);
             Scribe_Values.Look(ref ReanimateCorpses, "ReanimateCorpses", false, false);
             Scribe_Values.Look(ref OnlyBuried, "OnlyBuried", false, false);
+            Scribe_Values.Look(ref OnlyNonBuried, "OnlyNonBuried", false, false);
             Scribe_Values.Look(ref OnlyColonists, "OnlyColonists", false, false);
+            Scribe_Values.Look(ref OnlyNonColonists, "OnlyNonColonists", false, false);
         }
     }
 }

@@ -35,19 +35,21 @@ namespace Skeleton
             {
                 return false;
             }
-            if(LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyBuried)
+            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyBuried && !(corpse.ParentHolder is Building_Grave))
             {
-                if(!(corpse.ParentHolder is Building_Grave))
-                {
-                    return false;
-                }
+                return false;
             }
-            if(LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyColonists)
+            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyNonBuried && (corpse.ParentHolder is Building_Grave))
             {
-                if (!corpse.InnerPawn.Faction.IsPlayer)
-                {
-                    return false;
-                }
+                return false;
+            }
+            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyColonists && !corpse.InnerPawn.Faction.IsPlayer)
+            {
+                return false;
+            }
+            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyNonColonists && corpse.InnerPawn.Faction.IsPlayer)
+            {
+                return false;
             }
             return true;
         }
@@ -58,14 +60,22 @@ namespace Skeleton
             var cellToRessurectOn = corpse.TrueCenter().ToIntVec3();
             var map = corpse.Map;
             Building_Grave grave = null;
-            if(map == null)
+            if (map == null)
             {
                 grave = corpse.ParentHolder as Building_Grave;
                 map = grave.Map;
                 cellToRessurectOn = grave.TrueCenter().ToIntVec3();
             }
-            var pawnToRessurect = GeneratePawn(corpse);
-            if(grave != null && grave.GetDirectlyHeldThings().Count == 1)
+
+            Pawn pawnToRessurect;
+            try
+            {
+                pawnToRessurect = GeneratePawn(corpse);
+            } catch
+            {
+                return;
+            }
+            if (grave != null && grave.GetDirectlyHeldThings().Count == 1)
             {
                 //Log.Message($"WaSkeleton: Updating grave");
                 grave.EjectContents();
@@ -100,7 +110,7 @@ namespace Skeleton
             }
 
             validCorpses.Clear();
-            if(Current.Game == null)
+            if (Current.Game == null)
             {
                 return;
             }
@@ -174,7 +184,6 @@ namespace Skeleton
             //Log.Message($"WaSkeleton: Setting properties");
             newPawn.Name = corpse.InnerPawn.Name;
             newPawn.ageTracker = corpse.InnerPawn.ageTracker;
-
             //Log.Message($"WaSkeleton: Copying skills");
             foreach (SkillRecord sr in newPawn.skills.skills)
             {
@@ -192,6 +201,20 @@ namespace Skeleton
                 newPawn.story.adulthood = corpse.InnerPawn.story.adulthood;
             }
             newPawn.story.traits = corpse.InnerPawn.story.traits;
+            newPawn.abilities.abilities = corpse.InnerPawn.abilities.abilities;
+            newPawn.skills.skills = corpse.InnerPawn.skills.skills;
+            newPawn.timetable = corpse.InnerPawn.timetable;
+            var directRelations = new List<DirectPawnRelation>();
+            foreach (var relation in corpse.InnerPawn.relations.DirectRelations)
+            {
+                directRelations.Add(relation);
+            }
+            corpse.InnerPawn.relations.ClearAllRelations();
+            foreach (var relation in directRelations)
+            {
+                newPawn.relations.AddDirectRelation(relation.def, relation.otherPawn);
+                relation.otherPawn.needs.mood.thoughts.memories.RemoveMemoriesWhereOtherPawnIs(corpse.InnerPawn);
+            }
             return newPawn;
         }
 
@@ -199,9 +222,9 @@ namespace Skeleton
         {
             var text = $"{pawn.NameShortColored} {ressurectMessages.RandomElement()}";
             var messageType = MessageTypeDefOf.SilentInput;
-            if(pawn.Faction.HostileTo(Faction.OfPlayer))
+            if (pawn.Faction.HostileTo(Faction.OfPlayer))
             {
-                messageType = MessageTypeDefOf.NegativeEvent;                
+                messageType = MessageTypeDefOf.NegativeEvent;
             }
             var message = new Message(text, messageType, new LookTargets(pawn));
             Messages.Message(message, false);

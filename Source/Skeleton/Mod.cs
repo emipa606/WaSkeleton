@@ -50,13 +50,36 @@ namespace Skeleton
             var listing_Standard = new Listing_Standard();
             listing_Standard.Begin(rect);
             listing_Standard.Gap();
+            var OnlyBuriedPre = Settings.OnlyBuried;
+            var OnlyNonBuriedPre = Settings.OnlyNonBuried;
+            var OnlyColonistsPre = Settings.OnlyColonists;
+            var OnlyNonColonistsPre = Settings.OnlyNonColonists;
+
             listing_Standard.CheckboxLabeled("ExplodeOnDeath_Label".Translate(), ref Settings.ExplodeOnDeath, "ExplodeOnDeath_Tooltip".Translate());
             listing_Standard.CheckboxLabeled("AddHediffToAll_Label".Translate(), ref Settings.AddHediffToAll, "AddHediffToAll_Tooltip".Translate());
             listing_Standard.CheckboxLabeled("ReanimateCorpses_Label".Translate(), ref Settings.ReanimateCorpses, "ReanimateCorpses_Tooltip".Translate());
             if (Settings.ReanimateCorpses)
             {
                 listing_Standard.CheckboxLabeled("OnlyBuried_Label".Translate(), ref Settings.OnlyBuried, "OnlyBuried_Tooltip".Translate());
+                listing_Standard.CheckboxLabeled("OnlyNonBuried_Label".Translate(), ref Settings.OnlyNonBuried, "OnlyNonBuried_Tooltip".Translate());
                 listing_Standard.CheckboxLabeled("OnlyColonists_Label".Translate(), ref Settings.OnlyColonists, "OnlyColonists_Tooltip".Translate());
+                listing_Standard.CheckboxLabeled("OnlyNonColonists_Label".Translate(), ref Settings.OnlyNonColonists, "OnlyNonColonists_Tooltip".Translate());
+            }
+            if(OnlyBuriedPre && Settings.OnlyNonBuried)
+            {
+                Settings.OnlyBuried = false;
+            }
+            if (OnlyNonBuriedPre && Settings.OnlyBuried)
+            {
+                Settings.OnlyNonBuried = false;
+            }
+            if (OnlyColonistsPre && Settings.OnlyNonColonists)
+            {
+                Settings.OnlyColonists = false;
+            }
+            if (OnlyNonColonistsPre && Settings.OnlyColonists)
+            {
+                Settings.OnlyNonColonists = false;
             }
             listing_Standard.End();
         }

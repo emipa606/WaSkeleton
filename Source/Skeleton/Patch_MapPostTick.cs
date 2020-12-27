@@ -29,7 +29,11 @@ namespace Skeleton
             }
 			if(Skeleton.validCorpses.Count == 0)
             {
-				return;
+				Skeleton.ScanMapsForCorpses();
+				if (Skeleton.validCorpses.Count == 0)
+                {
+					return;
+                }
             }
 			var map = __instance;
 			var corpsesForThisMap = from corpse in Skeleton.validCorpses where corpse != null && (corpse.Map == map || (corpse.ParentHolder is Building_Grave && (corpse.ParentHolder as Building_Grave).Map == map)) select corpse;
