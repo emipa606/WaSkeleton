@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MainButtonDef[defName="Achievements"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementTabDef>
+              <defName>Mlie_Continued</defName>
+              <label>Continued Mods</label>
+            </AchievementsExpanded.AchievementTabDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>DRSKT_ItsAlive</defName>
+              <label>Its Alive!</label>
+              <description>Have one skeleton colonist</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>DRSKT_Race</key>
+                    <value>1</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/DRSKT_ItsAlive</texPath>
+              <points>10</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>DRSKT_UndeadTrio</defName>
+              <label>Undead trio</label>
+              <description>Have three skeleton colonists</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>DRSKT_Race</key>
+                    <value>3</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/DRSKT_UndeadTrio</texPath>
+              <points>20</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>DRSKT_SkeletonArmy</defName>
+              <label>Skeleton Army</label>
+              <description>Have ten skeleton colonists</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>DRSKT_Race</key>
+                    <value>10</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/DRSKT_SkeletonArmy</texPath>
+              <points>50</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
