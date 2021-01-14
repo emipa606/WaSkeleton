@@ -18,7 +18,16 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef Name="Mlie_AchievementParent" Abstract="true">
+              <bgtexPath>Achievements/AchievmentsBG</bgtexPath>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>DRSKT_ItsAlive</defName>
               <label>Its Alive!</label>
               <description>Have one skeleton colonist</description>
@@ -32,14 +41,13 @@
               </tracker>
               <texPath>Achievements/DRSKT_ItsAlive</texPath>
               <points>10</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>DRSKT_UndeadTrio</defName>
               <label>Undead trio</label>
               <description>Have three skeleton colonists</description>
@@ -53,14 +61,13 @@
               </tracker>
               <texPath>Achievements/DRSKT_UndeadTrio</texPath>
               <points>20</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>DRSKT_SkeletonArmy</defName>
               <label>Skeleton Army</label>
               <description>Have ten skeleton colonists</description>
@@ -74,7 +81,6 @@
               </tracker>
               <texPath>Achievements/DRSKT_SkeletonArmy</texPath>
               <points>50</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
