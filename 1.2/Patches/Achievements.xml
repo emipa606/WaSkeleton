@@ -15,14 +15,18 @@
             </AchievementsExpanded.AchievementTabDef>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
-          <value>
-            <AchievementsExpanded.AchievementDef Name="Mlie_AchievementParent" Abstract="true">
-              <bgtexPath>Achievements/AchievmentsBG</bgtexPath>
-              <tab>Mlie_Continued</tab>
-            </AchievementsExpanded.AchievementDef>
-          </value>
+        <li Class="PatchOperationConditional">
+          <success>Always</success>
+          <xpath>/Defs/AchievementsExpanded.AchievementDef[@Name="Mlie_AchievementParent"]</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <AchievementsExpanded.AchievementDef Name="Mlie_AchievementParent" Abstract="true">
+                <bgtexPath>Achievements/AchievmentsBG</bgtexPath>
+                <tab>Mlie_Continued</tab>
+              </AchievementsExpanded.AchievementDef>
+            </value>
+          </nomatch>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
