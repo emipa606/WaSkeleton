@@ -111,8 +111,9 @@
           <value>
             <AchievementsExpanded.Reward_MapIncident>
               <defName>DRSKT_ASkeletonJoinsTheColony</defName>
-              <label>A Skeleton Joins the Colony</label>
+              <label>A Skeleton Joins</label>
               <cost>90</cost>
+              <tab>Mlie_Continued</tab>
               <incident>DRSKT_SkeletonJoinsTheColony</incident>
             </AchievementsExpanded.Reward_MapIncident>
           </value>
