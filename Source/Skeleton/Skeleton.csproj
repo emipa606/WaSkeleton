@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="HediffCompProperties_RessurectionGlow.cs" />
     <Compile Include="Mod.cs" />
+    <Compile Include="Patch_Pawn_NeedsTracker - Copy.cs" />
     <Compile Include="Patch_StartedNewGame.cs" />
     <Compile Include="Patch_ThinkNode_ConditionalNeedPercentageAbove.cs" />
     <Compile Include="Patch_Pawn_NeedsTracker.cs" />
