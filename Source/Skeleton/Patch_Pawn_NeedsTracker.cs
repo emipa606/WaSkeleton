@@ -1,6 +1,6 @@
-﻿using HarmonyLib;
+﻿using System.Collections.Generic;
+using HarmonyLib;
 using RimWorld;
-using System.Collections.Generic;
 using Verse;
 
 namespace Skeleton
@@ -13,18 +13,20 @@ namespace Skeleton
         public static void Postfix(Pawn_NeedsTracker __instance)
         {
             var traverse = Traverse.Create(__instance);
-            Pawn pawn = traverse.Field("pawn").GetValue<Pawn>();
-            if (pawn.kindDef.race.defName != "DRSKT_Race")
+            var pawn = traverse.Field("pawn").GetValue<Pawn>();
+            if (!pawn.kindDef.race.defName.Contains("DRSKT"))
             {
                 return;
             }
 
-            if (__instance.TryGetNeed(NeedDefOf.Food) != null)
+            if (__instance.TryGetNeed(NeedDefOf.Food) == null)
             {
-                Need item = __instance.TryGetNeed(NeedDefOf.Food);
-                List<Need> needlist = traverse.Field("needs").GetValue<List<Need>>();
-                needlist.Remove(item);
+                return;
             }
+
+            var item = __instance.TryGetNeed(NeedDefOf.Food);
+            var needlist = traverse.Field("needs").GetValue<List<Need>>();
+            needlist.Remove(item);
         }
     }
 }

@@ -24,4 +24,27 @@
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <minGenerationAge>160</minGenerationAge>
   </PawnKindDef>
+  <PawnKindDef>
+    <race>DRSKT_Race_Zombie</race>
+    <combatPower>20</combatPower>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defName>DRSKT_Colonist_Zombie</defName>
+    <label>zombie colonist</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <backstoryCategories>
+      <li>Outlander</li>
+    </backstoryCategories>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>
+      <min>200</min>
+      <max>500</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <minGenerationAge>160</minGenerationAge>
+  </PawnKindDef>
 </Defs>

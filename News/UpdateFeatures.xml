@@ -21,4 +21,13 @@ I hope you will like this addition and if you have any ideas for more features, 
     <content>There is now an option to add the ressurected Hediff to all skeletons, not just those ressurected during the game but also all guests, starting pawns and others.
 </content>
   </HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>WaSkeleton_1_0_19_0</defName>
+    <assemblyVersion>1.0.19.0</assemblyVersion>
+    <content>img:Zombie|caption:There is now an option for adding zombies to the game. These will rarely spawn for a corpse during the rot-stage and their minds are more fuzzy and they are therefor immune to psychic fenomena. 
+They are however hideous to look at and because of their limited mental abilities will perform tasks even slower than the skeletons.|
+Activate it in the mod-options if it sounds interresting and thanks to NonSpecific for the textures!
+
+Fixed in this version is that skeleton and zombies do not feel pain. This was always intended and should now be working.</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>

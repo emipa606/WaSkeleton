@@ -91,6 +91,66 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
+              <defName>DRSKT_FailedReturn</defName>
+              <label>Failed return</label>
+              <description>Have one zombie colonist</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>DRSKT_Race_Zombie</key>
+                    <value>1</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/DRSKT_FailedReturn</texPath>
+              <points>10</points>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
+              <defName>DRSKT_PutUsBack</defName>
+              <label>Put us back!</label>
+              <description>Have three zombie colonists</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>DRSKT_Race_Zombie</key>
+                    <value>3</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/DRSKT_PutUsBack</texPath>
+              <points>20</points>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
+              <defName>DRSKT_ZombieHorde</defName>
+              <label>Zombie Horde</label>
+              <description>Have ten zombie colonists</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>DRSKT_Race_Zombie</key>
+                    <value>10</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/DRSKT_ZombieHorde</texPath>
+              <points>50</points>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
             <IncidentDef>
               <defName>DRSKT_SkeletonJoinsTheColony</defName>
               <label>Skeleton Joins the Colony</label>
@@ -115,6 +175,36 @@
               <cost>90</cost>
               <tab>Mlie_Continued</tab>
               <incident>DRSKT_SkeletonJoinsTheColony</incident>
+            </AchievementsExpanded.Reward_MapIncident>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <IncidentDef>
+              <defName>DRSKT_ZombieJoinsTheColony</defName>
+              <label>Zombie Joins the Colony</label>
+              <category>Misc</category>
+              <targetTags>
+                <li>Map_PlayerHome</li>
+              </targetTags>
+              <workerClass>IncidentWorker_WandererJoin</workerClass>
+              <letterLabel>Zombie joins: {PAWN_nameDef}</letterLabel>
+              <letterText>A {PAWN_title} named {PAWN_nameDef} has arrived and is joining the colony.\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily. If you don't want {PAWN_nameDef}, you can banish {PAWN_objective}, sell {PAWN_objective} into slavery, or simply kill {PAWN_objective}. However, your other colonists may find this disturbing.</letterText>
+              <baseChance>0</baseChance>
+              <pawnKind>DRSKT_Colonist_Zombie</pawnKind>
+            </IncidentDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.Reward_MapIncident>
+              <defName>DRSKT_AZombieJoinsTheColony</defName>
+              <label>A Zombie Joins</label>
+              <cost>90</cost>
+              <tab>Mlie_Continued</tab>
+              <incident>DRSKT_ZombieJoinsTheColony</incident>
             </AchievementsExpanded.Reward_MapIncident>
           </value>
         </li>

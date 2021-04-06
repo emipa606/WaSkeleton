@@ -21,4 +21,6 @@
   <OnlyNonBuried_Tooltip>Only corpses that have not been buried will have a chance of coming back as skeletons</OnlyNonBuried_Tooltip>
   <OnlyNonColonists_Label>Only non-colonist corpses can reanimate</OnlyNonColonists_Label>
   <OnlyNonColonists_Tooltip>Only corpses of died non-colonists can come back as skeletons</OnlyNonColonists_Tooltip>
+  <AllowZombies_Label>Allow corpses to sometimes come back as zombies</AllowZombies_Label>
+  <AllowZombies_Tooltip>Sometimes ressurection happens too early in the process and the corpse comes back as a zombie instead</AllowZombies_Tooltip>
 </LanguageData>

@@ -11,9 +11,22 @@
     </graphicData>
   </ThingDef>
   <ThingDef ParentName="MoteBase">
-    <defName>Mote_RessurectionGlow</defName>
+    <defName>Mote_RessurectionGlowGreen</defName>
     <graphicData>
       <texPath>Glow/Green</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.5</fadeInTime>
+      <solidTime>0.5</solidTime>
+      <fadeOutTime>0.5</fadeOutTime>
+    </mote>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_RessurectionGlowBlue</defName>
+    <graphicData>
+      <texPath>Glow/Blue</texPath>
       <shaderType>MoteGlow</shaderType>
     </graphicData>
     <altitudeLayer>MoteOverhead</altitudeLayer>

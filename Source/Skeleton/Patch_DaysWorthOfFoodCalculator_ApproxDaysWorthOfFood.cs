@@ -24,7 +24,7 @@ namespace Skeleton
                 assumeCaravanMoving)
         {
             var list = new List<Pawn>(pawns);
-            list.RemoveAll(pawn => pawn.kindDef.race.defName == "DRSKT_Race");
+            list.RemoveAll(pawn => pawn.kindDef.race.defName.Contains("DRSKT"));
             pawns = list;
         }
     }
