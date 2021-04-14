@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Ressurection messages -->
+  <ressurectMessage1>воскрес из мертвых!</ressurectMessage1>
+  <ressurectMessage2>реанимирован!</ressurectMessage2>
+  <ressurectMessage3>проснулся от вечного сна!</ressurectMessage3>
+  <ressurectMessage4>снова проснулся!</ressurectMessage4>
+  <ressurectMessage5>был воскрешён как нежить!</ressurectMessage5>
+  <!-- Settings -->
+  <ExplodeOnDeath_Label>Скелеты взрываются при смерти</ExplodeOnDeath_Label>
+  <ExplodeOnDeath_Tooltip>Вместо мирной смерти тела скелетов будут взрываться.</ExplodeOnDeath_Tooltip>
+  <AddHediffToAll_Label>Добавлять статус Воскресший всем скелетам</AddHediffToAll_Label>
+  <AddHediffToAll_Tooltip>Также у случайных появляющихся скелетов будет статус Воскресший.</AddHediffToAll_Tooltip>
+  <ReanimateCorpses_Label>Трупы можно реанимировать ночью</ReanimateCorpses_Label>
+  <ReanimateCorpses_Tooltip>У трупов будет шанс воскреснуть в виде скелетов ночью.</ReanimateCorpses_Tooltip>
+  <OnlyBuried_Label>Реанимировать только похороненные трупы</OnlyBuried_Label>
+  <OnlyBuried_Tooltip>Только похороненные трупы смогут воскреснуть в виде скелетов.</OnlyBuried_Tooltip>
+  <OnlyColonists_Label>Только трупы колонистов могут оживать</OnlyColonists_Label>
+  <OnlyColonists_Tooltip>Только трупы погибших колонистов могут вернуться в виде скелетов.</OnlyColonists_Tooltip>
+  <OnlyNonBuried_Label>Реанимировать только незахороненные трупы</OnlyNonBuried_Label>
+  <OnlyNonBuried_Tooltip>Только трупы, которые не были похоронены, будут иметь шанс вернуться в виде скелетов.</OnlyNonBuried_Tooltip>
+  <OnlyNonColonists_Label>Только не подконтрольные трупы колонистов могут реанимировать</OnlyNonColonists_Label>
+  <OnlyNonColonists_Tooltip>Только трупы чужих колонистов смогут вернуться в виде скелетов.</OnlyNonColonists_Tooltip>
+  <AllowZombies_Label>Позволить трупам иногда воскрешать в виде зомби</AllowZombies_Label>
+  <AllowZombies_Tooltip>Иногда воскрешение происходит слишком быстро, позволяя появляться зомби.</AllowZombies_Tooltip>
+</LanguageData>

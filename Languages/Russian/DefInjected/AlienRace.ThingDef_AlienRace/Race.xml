@@ -1,8 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DRSKT_Race.label>Скелет</DRSKT_Race.label>
-  <DRSKT_Race.description>Он умер, но был воскрешён по неизвестной причине</DRSKT_Race.description>
+  <DRSKT_Race.description>Он умер, но был воскрешён по неизвестной причине.</DRSKT_Race.description>
+  <DRSKT_Race.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</DRSKT_Race.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
   <DRSKT_Race.tools.0.label>левый кулак</DRSKT_Race.tools.0.label>
   <DRSKT_Race.tools.1.label>правый кулак</DRSKT_Race.tools.1.label>
   <DRSKT_Race.tools.2.label>голова</DRSKT_Race.tools.2.label>
+  <DRSKT_Race_Zombie.label>Зомби</DRSKT_Race_Zombie.label>
+  <DRSKT_Race_Zombie.description>Что-то слишком рано его разбудило. Его ум нечёткий, но сильная воля.</DRSKT_Race_Zombie.description>
+  <DRSKT_Race_Zombie.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</DRSKT_Race_Zombie.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <DRSKT_Race_Zombie.tools.0.label>левый кулак</DRSKT_Race_Zombie.tools.0.label>
+  <DRSKT_Race_Zombie.tools.1.label>правый кулак</DRSKT_Race_Zombie.tools.1.label>
+  <DRSKT_Race_Zombie.tools.2.label>голова</DRSKT_Race_Zombie.tools.2.label>
 </LanguageData>

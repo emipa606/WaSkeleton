@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RessurectedFromTheDead.label>воскресший (скелет)</RessurectedFromTheDead.label>
+  <RessurectedFromTheDead.description>Пробудившись из вечного сна, ваше тело стало вялым и медленно реагирует. Вы не жаждете ни сна, ни еды. Вы хотите вернуться в могилу, чтобы снова отдохнуть, но что-то вернуло вас против воли, не давая успокоиться.</RessurectedFromTheDead.description>
+  <ReanimatedFromTheDead.label>оживший</ReanimatedFromTheDead.label>
+  <ReanimatedFromTheDead.description>Пробудившись из вечного сна, ваше тело стало вялым и медленно реагирует. Вы не жаждете ни сна, ни еды. Ваше разлагающееся тело отталкивает большинство окружающих.</ReanimatedFromTheDead.description>
+</LanguageData>

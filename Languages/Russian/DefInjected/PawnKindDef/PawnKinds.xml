@@ -3,8 +3,14 @@
   <!-- 플레이어펙션 -->
   <DRSKT_Colonist.label>колонист скелет</DRSKT_Colonist.label>
   <DRSKT_Colonist.labelPlural>колонисты скелеты</DRSKT_Colonist.labelPlural>
-  <DRSKT_Colonist.labelMale>колонист скелет мужского пола</DRSKT_Colonist.labelMale>
-  <DRSKT_Colonist.labelMalePlural>колонисты скелеты мужского пола</DRSKT_Colonist.labelMalePlural>
-  <DRSKT_Colonist.labelFemale>колонист скелет женского пола</DRSKT_Colonist.labelFemale>
-  <DRSKT_Colonist.labelFemalePlural>колонисты скелеты женского пола</DRSKT_Colonist.labelFemalePlural>
+  <DRSKT_Colonist.labelMale>колонист скелет</DRSKT_Colonist.labelMale>
+  <DRSKT_Colonist.labelMalePlural>колонисты скелеты</DRSKT_Colonist.labelMalePlural>
+  <DRSKT_Colonist.labelFemale>колонистка скелет</DRSKT_Colonist.labelFemale>
+  <DRSKT_Colonist.labelFemalePlural>колонистки скелеты</DRSKT_Colonist.labelFemalePlural>
+  <DRSKT_Colonist_Zombie.label>зомби-колонист</DRSKT_Colonist_Zombie.label>
+  <DRSKT_Colonist_Zombie.labelPlural>зомби-колонисты</DRSKT_Colonist_Zombie.labelPlural>
+  <DRSKT_Colonist_Zombie.labelMale>зомби-колонист</DRSKT_Colonist_Zombie.labelMale>
+  <DRSKT_Colonist_Zombie.labelMalePlural>зомби-колонисты</DRSKT_Colonist_Zombie.labelMalePlural>
+  <DRSKT_Colonist_Zombie.labelFemale>зомби-колонистка</DRSKT_Colonist_Zombie.labelFemale>
+  <DRSKT_Colonist_Zombie.labelFemalePlural>зомби-колонистки</DRSKT_Colonist_Zombie.labelFemalePlural>
 </LanguageData>
