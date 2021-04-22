@@ -11,13 +11,13 @@ namespace Skeleton
     [StaticConstructorOnStartup]
     public static class Skeleton
     {
-        public static readonly List<Corpse> validCorpses = new();
-        public static readonly List<Corpse> validZombieCorpses = new();
+        public static readonly List<Corpse> validCorpses = new List<Corpse>();
+        public static readonly List<Corpse> validZombieCorpses = new List<Corpse>();
 
         private static readonly PawnKindDef SkeletonPawnKind;
         private static readonly PawnKindDef ZombiePawnKind;
 
-        private static readonly List<TaggedString> ressurectMessages = new()
+        private static readonly List<TaggedString> ressurectMessages = new List<TaggedString>
         {
             "ressurectMessage1".Translate(),
             "ressurectMessage2".Translate(),
@@ -38,36 +38,48 @@ namespace Skeleton
         public static bool IsCorpseValid(Corpse corpse, out bool canBeZombie)
         {
             canBeZombie = false;
-            if (!corpse.InnerPawn.RaceProps.Humanlike || corpse.InnerPawn.kindDef.race.defName.Contains("DRSKT"))
+
+            if (corpse?.InnerPawn == null)
             {
                 return false;
             }
 
-            if (!corpse.InnerPawn.health.hediffSet.HasHead)
+            if (!corpse.InnerPawn.RaceProps?.Humanlike == true || corpse.InnerPawn.kindDef?.race?.defName?.Contains("DRSKT") == true)
             {
                 return false;
             }
 
-            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyBuried &&
-                !(corpse.ParentHolder is Building_Grave))
+            if (!corpse.InnerPawn.health?.hediffSet?.HasHead == true)
             {
                 return false;
             }
 
-            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyNonBuried &&
-                corpse.ParentHolder is Building_Grave)
+            var settings = LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>();
+
+            if (settings == null)
+            {
+                settings = new SkeletonSettings
+                {
+                    ExplodeOnDeath = true
+                };
+            }
+
+            if (settings.OnlyBuried && !(corpse.ParentHolder is Building_Grave))
             {
                 return false;
             }
 
-            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyColonists &&
-                !corpse.InnerPawn.Faction.IsPlayer)
+            if (settings.OnlyNonBuried && corpse.ParentHolder is Building_Grave)
             {
                 return false;
             }
 
-            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyNonColonists &&
-                corpse.InnerPawn.Faction.IsPlayer)
+            if (settings.OnlyColonists && !corpse.InnerPawn.Faction?.IsPlayer == true)
+            {
+                return false;
+            }
+
+            if (settings.OnlyNonColonists && corpse.InnerPawn.Faction?.IsPlayer == true)
             {
                 return false;
             }
@@ -79,14 +91,14 @@ namespace Skeleton
 
             if (corpse.GetRotStage() != RotStage.Rotting)
             {
-                Log.Message(corpse.GetRotStage().ToString());
+                //Log.Message(corpse.GetRotStage().ToString());
                 return false;
             }
 
             canBeZombie = true;
             var randValue = Rand.Value;
-            Log.Message(corpse.LabelShort);
-            Log.Message(randValue.ToString());
+            //Log.Message(corpse.LabelShort);
+            //Log.Message(randValue.ToString());
             return randValue < 0.2f;
         }
 
