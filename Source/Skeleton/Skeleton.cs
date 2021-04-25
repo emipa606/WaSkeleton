@@ -4,6 +4,7 @@ using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using Verse;
+using Verse.AI.Group;
 
 namespace Skeleton
 {
@@ -35,10 +36,8 @@ namespace Skeleton
             harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
         }
 
-        public static bool IsCorpseValid(Corpse corpse, out bool canBeZombie)
+        public static bool IsCorpseValid(Corpse corpse)
         {
-            canBeZombie = false;
-
             if (corpse?.InnerPawn == null)
             {
                 return false;
@@ -84,9 +83,19 @@ namespace Skeleton
                 return false;
             }
 
+            if (corpse.GetRotStage() == RotStage.Fresh)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public static bool CanBeZombie(Corpse corpse)
+        {
             if (corpse.IsDessicated())
             {
-                return true;
+                return false;
             }
 
             if (corpse.GetRotStage() != RotStage.Rotting)
@@ -95,7 +104,11 @@ namespace Skeleton
                 return false;
             }
 
-            canBeZombie = true;
+            if (validCorpses.Contains(corpse))
+            {
+                return false;
+            }
+
             var randValue = Rand.Value;
             //Log.Message(corpse.LabelShort);
             //Log.Message(randValue.ToString());
@@ -152,6 +165,20 @@ namespace Skeleton
             pawnToRessurect.apparel.WornApparel.Clear();
             corpse.InnerPawn.apparel.GetDirectlyHeldThings()
                 .TryTransferAllToContainer(pawnToRessurect.apparel.GetDirectlyHeldThings());
+
+            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().EnemyIsHostile &&
+                pawnToRessurect.Faction.HostileTo(Faction.OfPlayer))
+            {
+                if (zombie)
+                {
+                    pawnToRessurect.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter);
+                }
+                else
+                {
+                    LordMaker.MakeNewLord(pawnToRessurect.Faction, new LordJob_AssaultColony(pawnToRessurect.Faction), pawnToRessurect.Map, new List<Pawn> {pawnToRessurect});
+                }
+            }
+
             //Log.Message($"WaSkeleton: Removing corpse from list");
             if (validCorpses.Contains(corpse))
             {
@@ -193,12 +220,12 @@ namespace Skeleton
                     where thing is Corpse
                     select thing as Corpse)
                 {
-                    if (!IsCorpseValid(corpse, out var canBeZombie))
+                    if (!IsCorpseValid(corpse))
                     {
                         continue;
                     }
 
-                    if (canBeZombie)
+                    if (CanBeZombie(corpse))
                     {
                         validZombieCorpses.Add(corpse);
                     }
@@ -217,12 +244,12 @@ namespace Skeleton
                         continue;
                     }
 
-                    if (!IsCorpseValid(grave.Corpse, out var canBeZombie))
+                    if (!IsCorpseValid(grave.Corpse))
                     {
                         continue;
                     }
 
-                    if (canBeZombie)
+                    if (CanBeZombie(grave.Corpse))
                     {
                         validZombieCorpses.Add(grave.Corpse);
                     }
@@ -236,7 +263,7 @@ namespace Skeleton
             if (Prefs.DevMode && (validCorpses.Any() || validZombieCorpses.Any()))
             {
                 Log.Message(
-                    $"WaSkeleton: Added {validCorpses.Count} corpses to the valid corpse list, {validZombieCorpses.Count} to zombies list.");
+                    $"WaSkeleton: Added {validCorpses.Count} corpses to the valid skeleton list, {validZombieCorpses.Count} to zombies list.");
             }
         }
 

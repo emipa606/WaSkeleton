@@ -1,5 +1,8 @@
 # Changelog for WaSkeleton
 
+1.0.22.0 - Added an option for spawning enemies in aggro state, fixed zombie spawn-percent
+
+
 1.0.21.0 - Added some more checks
 
 

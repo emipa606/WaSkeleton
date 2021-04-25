@@ -23,4 +23,6 @@
   <OnlyNonColonists_Tooltip>Only corpses of died non-colonists can come back as skeletons</OnlyNonColonists_Tooltip>
   <AllowZombies_Label>Allow corpses to sometimes come back as zombies</AllowZombies_Label>
   <AllowZombies_Tooltip>Sometimes ressurection happens too early in the process and the corpse comes back as a zombie instead</AllowZombies_Tooltip>
+  <EnemyIsHostile_Label>Ressurected enemies spawn hostile</EnemyIsHostile_Label>
+  <EnemyIsHostile_Tooltip>If the ressurected pawn is an enemy of the player, it will attack instead or just leaving the map</EnemyIsHostile_Tooltip>
 </LanguageData>

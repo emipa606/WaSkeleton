@@ -42,7 +42,8 @@ namespace Skeleton
             var map = __instance;
             var corpsesForThisMap = from corpse in Skeleton.validCorpses
                 where corpse != null &&
-                      (corpse.Map == map || corpse.ParentHolder is Building_Grave grave && grave.Map == map)
+                      (corpse.Map == map || corpse.ParentHolder is Building_Grave grave && grave.Map == map) &&
+                      corpse.GetRotStage() == RotStage.Dessicated
                 select corpse;
             if (corpsesForThisMap.Any() && Rand.Value < 0.4)
             {
@@ -58,6 +59,7 @@ namespace Skeleton
             corpsesForThisMap = from corpse in Skeleton.validZombieCorpses
                 where corpse != null &&
                       (corpse.Map == map || corpse.ParentHolder is Building_Grave grave && grave.Map == map)
+                      && corpse.GetRotStage() == RotStage.Rotting
                 select corpse;
             if (!corpsesForThisMap.Any() || !(Rand.Value < 0.4))
             {

@@ -22,24 +22,33 @@ namespace Skeleton
                 return;
             }
 
-            if (!Skeleton.IsCorpseValid(__instance, out var canBeZombie))
+            if (!Skeleton.IsCorpseValid(__instance))
             {
                 return;
             }
 
-            if (canBeZombie)
+            if (Skeleton.CanBeZombie(__instance))
             {
                 Skeleton.validZombieCorpses.Add(__instance);
+                if (Prefs.DevMode)
+                {
+                    Log.Message(
+                        $"WaSkeleton: Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid zombie-list.");
+                }
             }
             else
             {
-                Skeleton.validCorpses.Add(__instance);
-            }
+                if (Skeleton.validZombieCorpses.Contains(__instance))
+                {
+                    Skeleton.validZombieCorpses.Remove(__instance);
+                }
 
-            if (Prefs.DevMode)
-            {
-                Log.Message(
-                    $"WaSkeleton: Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid corpse list, can be zombie: {canBeZombie}.");
+                Skeleton.validCorpses.Add(__instance);
+                if (Prefs.DevMode)
+                {
+                    Log.Message(
+                        $"WaSkeleton: Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid skeleton-list.");
+                }
             }
         }
     }

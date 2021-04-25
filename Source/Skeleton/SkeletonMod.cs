@@ -68,6 +68,8 @@ namespace Skeleton
                 "ReanimateCorpses_Tooltip".Translate());
             if (Settings.ReanimateCorpses)
             {
+                listing_Standard.CheckboxLabeled("EnemyIsHostile_Label".Translate(), ref Settings.EnemyIsHostile,
+                    "EnemyIsHostile_Tooltip".Translate());
                 listing_Standard.CheckboxLabeled("OnlyBuried_Label".Translate(), ref Settings.OnlyBuried,
                     "OnlyBuried_Tooltip".Translate());
                 listing_Standard.CheckboxLabeled("OnlyNonBuried_Label".Translate(), ref Settings.OnlyNonBuried,
