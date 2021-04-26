@@ -283,14 +283,19 @@ namespace Skeleton
             var reanimated = DefDatabase<HediffDef>.GetNamedSilentFail("ReanimatedFromTheDead");
             foreach (var map in Current.Game.Maps)
             {
-                foreach (var pawn in from thing in map.listerThings.AllThings
-                    where thing != null && thing.def.defName.Contains("DRSKT") && !((Pawn) thing).health.Dead
-                    select thing as Pawn)
+                foreach (var pawn in from pawn in map.mapPawns.AllPawns
+                    where pawn != null && pawn.def.defName.Contains("DRSKT") && pawn.health?.Dead == false
+                    select pawn)
                 {
                     var hediffToAdd = HediffMaker.MakeHediff(ressurected, pawn);
                     if (pawn.def.defName == "DRSKT_Race_Zombie")
                     {
                         hediffToAdd = HediffMaker.MakeHediff(reanimated, pawn);
+                    }
+
+                    if (pawn.health == null)
+                    {
+                        pawn.health = new Pawn_HealthTracker(pawn);
                     }
 
                     if (pawn.health.hediffSet.HasHediff(ressurected) || pawn.health.hediffSet.HasHediff(reanimated))
