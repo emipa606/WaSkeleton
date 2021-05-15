@@ -1,5 +1,8 @@
 # Changelog for WaSkeleton
 
+1.0.24.0 - Added option to ressurect only during eclipse, and to ressurect all corpses at once
+
+
 1.0.23.0 - Fix for adding aura to existing undead
 
 

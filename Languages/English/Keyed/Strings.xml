@@ -6,6 +6,7 @@
   <ressurectMessage3>has awoken from their eternal sleep!</ressurectMessage3>
   <ressurectMessage4>is awake once again!</ressurectMessage4>
   <ressurectMessage5>has been brought back as an undead!</ressurectMessage5>
+  <ressurectMessageAll>{0} pawns you thought was dead and gone have returned once again!</ressurectMessageAll>
   <!-- Settings -->
   <ExplodeOnDeath_Label>Skeletons explode on death</ExplodeOnDeath_Label>
   <ExplodeOnDeath_Tooltip>Instead of dying peacefully, the corpses will explode</ExplodeOnDeath_Tooltip>
@@ -25,4 +26,11 @@
   <AllowZombies_Tooltip>Sometimes ressurection happens too early in the process and the corpse comes back as a zombie instead</AllowZombies_Tooltip>
   <EnemyIsHostile_Label>Ressurected enemies spawn hostile</EnemyIsHostile_Label>
   <EnemyIsHostile_Tooltip>If the ressurected pawn is an enemy of the player, it will attack instead or just leaving the map</EnemyIsHostile_Tooltip>
+  <OnlyDuringEclipse_Label>Only ressurect during eclipses</OnlyDuringEclipse_Label>
+  <OnlyDuringEclipse_Tooltip>Instead of ressurecting during the nighttime, pawns will ressurect during eclipses</OnlyDuringEclipse_Tooltip>
+  <AllAtOnce_Label>Ressurect all at once</AllAtOnce_Label>
+  <AllAtOnce_Tooltip>Instead of ressurecting one by one, pawns will return all at once, like an undead horde</AllAtOnce_Tooltip>
+  <CurrentModVersion_Label>Installed mod-version: {0}</CurrentModVersion_Label>
+  <VerboseLogging_Label>Verbose logging</VerboseLogging_Label>
+  <VerboseLogging_Tooltip>Will log a lot of rows, mainly for debugging and error checking</VerboseLogging_Tooltip>
 </LanguageData>

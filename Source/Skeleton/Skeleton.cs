@@ -43,7 +43,8 @@ namespace Skeleton
                 return false;
             }
 
-            if (!corpse.InnerPawn.RaceProps?.Humanlike == true || corpse.InnerPawn.kindDef?.race?.defName?.Contains("DRSKT") == true)
+            if (!corpse.InnerPawn.RaceProps?.Humanlike == true ||
+                corpse.InnerPawn.kindDef?.race?.defName?.Contains("DRSKT") == true)
             {
                 return false;
             }
@@ -100,7 +101,6 @@ namespace Skeleton
 
             if (corpse.GetRotStage() != RotStage.Rotting)
             {
-                //Log.Message(corpse.GetRotStage().ToString());
                 return false;
             }
 
@@ -110,14 +110,13 @@ namespace Skeleton
             }
 
             var randValue = Rand.Value;
-            //Log.Message(corpse.LabelShort);
-            //Log.Message(randValue.ToString());
             return randValue < 0.2f;
         }
 
-        public static void RessurectCorpse(Corpse corpse, bool zombie = false)
+        public static Pawn RessurectCorpse(Corpse corpse, bool zombie = false)
         {
-            //Log.Message($"WaSkeleton: Will ressurect {corpse.InnerPawn.NameShortColored}");
+            LogMessage(
+                $"Will ressurect {corpse.InnerPawn.NameShortColored}");
             var cellToRessurectOn = corpse.TrueCenter().ToIntVec3();
             var map = corpse.Map;
             Building_Grave grave = null;
@@ -131,23 +130,32 @@ namespace Skeleton
                 }
             }
 
-            Pawn pawnToRessurect;
-            try
+            Pawn pawnToRessurect = null;
+            var counter = 0;
+            while (pawnToRessurect == null && counter < 15)
             {
-                pawnToRessurect = GeneratePawn(corpse, zombie);
+                try
+                {
+                    pawnToRessurect = GeneratePawn(corpse, zombie);
+                }
+                catch
+                {
+                    // ignored
+                }
+
+                counter++;
             }
-            catch
+
+            if (pawnToRessurect == null)
             {
-                return;
+                return null;
             }
 
             if (grave != null && grave.GetDirectlyHeldThings().Count == 1)
             {
-                //Log.Message($"WaSkeleton: Updating grave");
                 grave.EjectContents();
             }
 
-            //Log.Message($"WaSkeleton: Spawning pawn");
             GenSpawn.Spawn(pawnToRessurect, cellToRessurectOn, map);
             MoteMaker.ThrowSmoke(cellToRessurectOn.ToVector3(), map, 2f);
             var hediffToAdd = DefDatabase<HediffDef>.GetNamedSilentFail("RessurectedFromTheDead");
@@ -157,11 +165,9 @@ namespace Skeleton
             }
 
             pawnToRessurect.health.AddHediff(hediffToAdd);
-            //Log.Message($"WaSkeleton: Transferring items");
             pawnToRessurect.inventory.DestroyAll();
             corpse.InnerPawn.inventory.GetDirectlyHeldThings()
                 .TryTransferAllToContainer(pawnToRessurect.apparel.GetDirectlyHeldThings());
-            //Log.Message($"WaSkeleton: Transferring clothes");
             pawnToRessurect.apparel.WornApparel.Clear();
             corpse.InnerPawn.apparel.GetDirectlyHeldThings()
                 .TryTransferAllToContainer(pawnToRessurect.apparel.GetDirectlyHeldThings());
@@ -175,11 +181,11 @@ namespace Skeleton
                 }
                 else
                 {
-                    LordMaker.MakeNewLord(pawnToRessurect.Faction, new LordJob_AssaultColony(pawnToRessurect.Faction), pawnToRessurect.Map, new List<Pawn> {pawnToRessurect});
+                    LordMaker.MakeNewLord(pawnToRessurect.Faction, new LordJob_AssaultColony(pawnToRessurect.Faction),
+                        pawnToRessurect.Map, new List<Pawn> {pawnToRessurect});
                 }
             }
 
-            //Log.Message($"WaSkeleton: Removing corpse from list");
             if (validCorpses.Contains(corpse))
             {
                 validCorpses.Remove(corpse);
@@ -191,8 +197,8 @@ namespace Skeleton
             }
 
             SendRessurectionMessage(pawnToRessurect);
-            //Log.Message($"WaSkeleton: Removing corpse from map");
             corpse.Destroy();
+            return pawnToRessurect;
         }
 
         public static void ScanMapsForCorpses()
@@ -202,10 +208,8 @@ namespace Skeleton
                 return;
             }
 
-            if (Prefs.DevMode)
-            {
-                Log.Message("WaSkeleton: cleared the valid corpses-list.");
-            }
+            LogMessage(
+                "WaSkeleton: cleared the valid corpses-list.");
 
             validCorpses.Clear();
             validZombieCorpses.Clear();
@@ -260,10 +264,10 @@ namespace Skeleton
                 }
             }
 
-            if (Prefs.DevMode && (validCorpses.Any() || validZombieCorpses.Any()))
+            if (validCorpses.Any() || validZombieCorpses.Any())
             {
-                Log.Message(
-                    $"WaSkeleton: Added {validCorpses.Count} corpses to the valid skeleton list, {validZombieCorpses.Count} to zombies list.");
+                LogMessage(
+                    $"Added {validCorpses.Count} corpses to the valid skeleton list, {validZombieCorpses.Count} to zombies list.");
             }
         }
 
@@ -310,7 +314,6 @@ namespace Skeleton
 
         private static Pawn GeneratePawn(Corpse corpse, bool zombie = false)
         {
-            //Log.Message($"WaSkeleton: Generating request");
             var localPawnKind = SkeletonPawnKind;
             if (zombie)
             {
@@ -321,18 +324,14 @@ namespace Skeleton
                 PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 0, false, true, false,
                 false, false, false, false, false, 0, null, 1, null, null, null, null, null, null, null,
                 corpse.InnerPawn.gender);
-            //Log.Message($"WaSkeleton: Generating pawn of kind {skeletonPawnKind}");
             var newPawn = PawnGenerator.GeneratePawn(request);
-            //Log.Message($"WaSkeleton: Setting properties");
             newPawn.Name = corpse.InnerPawn.Name;
             newPawn.ageTracker = corpse.InnerPawn.ageTracker;
-            //Log.Message($"WaSkeleton: Copying skills");
             foreach (var sr in newPawn.skills.skills)
             {
                 sr.Level = corpse.InnerPawn.skills.GetSkill(sr.def).levelInt;
             }
 
-            //Log.Message($"WaSkeleton: Setting hostility response");
             if (corpse.InnerPawn.Faction != null && corpse.InnerPawn.Faction.IsPlayer)
             {
                 newPawn.playerSettings.hostilityResponse = HostilityResponseMode.Attack;
@@ -372,6 +371,11 @@ namespace Skeleton
 
         private static void SendRessurectionMessage(Pawn pawn)
         {
+            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().AllAtOnce)
+            {
+                return;
+            }
+
             var text = $"{pawn.NameShortColored} {ressurectMessages.RandomElement()}";
             var messageType = MessageTypeDefOf.SilentInput;
             if (pawn.Faction.HostileTo(Faction.OfPlayer))
@@ -383,9 +387,37 @@ namespace Skeleton
             Messages.Message(message, false);
         }
 
-        public static bool IsNightTime(Map p)
+        public static bool IsNightTime(Map map)
         {
-            return GenLocalDate.HourInteger(p) >= 23 || GenLocalDate.HourInteger(p) <= 5;
+            if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyDuringEclipse)
+            {
+                return false;
+            }
+
+            return GenLocalDate.HourInteger(map) >= 23 || GenLocalDate.HourInteger(map) <= 5;
+        }
+
+        public static bool IsEclipse(Map map)
+        {
+            if (!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyDuringEclipse)
+            {
+                return false;
+            }
+
+            var tempAllGameConditionsAffectingMap = new List<GameCondition>();
+            map.gameConditionManager.GetAllGameConditionsAffectingMap(map, tempAllGameConditionsAffectingMap);
+            LogMessage(string.Join(",", tempAllGameConditionsAffectingMap));
+            return tempAllGameConditionsAffectingMap.Any(condition => condition.def.defName == "Eclipse");
+        }
+
+        public static void LogMessage(string message, bool forced = false)
+        {
+            if (!forced && !LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().VerboseLogging)
+            {
+                return;
+            }
+
+            Log.Message($"[WaSkeleton]: {message}");
         }
     }
 }

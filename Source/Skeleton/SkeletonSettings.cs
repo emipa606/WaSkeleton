@@ -8,14 +8,17 @@ namespace Skeleton
     internal class SkeletonSettings : ModSettings
     {
         public bool AddHediffToAll;
+        public bool AllAtOnce;
         public bool AllowZombies;
         public bool EnemyIsHostile;
         public bool ExplodeOnDeath = true;
         public bool OnlyBuried;
         public bool OnlyColonists;
+        public bool OnlyDuringEclipse;
         public bool OnlyNonBuried;
         public bool OnlyNonColonists;
         public bool ReanimateCorpses;
+        public bool VerboseLogging;
 
         /// <summary>
         ///     Saving and loading the values
@@ -32,6 +35,9 @@ namespace Skeleton
             Scribe_Values.Look(ref OnlyNonBuried, "OnlyNonBuried");
             Scribe_Values.Look(ref OnlyColonists, "OnlyColonists");
             Scribe_Values.Look(ref OnlyNonColonists, "OnlyNonColonists");
+            Scribe_Values.Look(ref OnlyDuringEclipse, "OnlyDuringEclipse");
+            Scribe_Values.Look(ref AllAtOnce, "AllAtOnce");
+            Scribe_Values.Look(ref VerboseLogging, "VerboseLogging");
         }
     }
 }

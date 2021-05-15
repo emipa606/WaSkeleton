@@ -30,11 +30,8 @@ namespace Skeleton
             if (Skeleton.CanBeZombie(__instance))
             {
                 Skeleton.validZombieCorpses.Add(__instance);
-                if (Prefs.DevMode)
-                {
-                    Log.Message(
-                        $"WaSkeleton: Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid zombie-list.");
-                }
+                Skeleton.LogMessage(
+                    $"Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid zombie-list.");
             }
             else
             {
@@ -44,11 +41,8 @@ namespace Skeleton
                 }
 
                 Skeleton.validCorpses.Add(__instance);
-                if (Prefs.DevMode)
-                {
-                    Log.Message(
-                        $"WaSkeleton: Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid skeleton-list.");
-                }
+                Skeleton.LogMessage(
+                    $"Added the corpse of {__instance.InnerPawn.NameShortColored} to the valid skeleton-list.");
             }
         }
     }

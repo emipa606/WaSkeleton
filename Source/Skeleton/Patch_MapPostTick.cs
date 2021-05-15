@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -25,7 +26,7 @@ namespace Skeleton
                 return;
             }
 
-            if (!Skeleton.IsNightTime(__instance))
+            if (!Skeleton.IsNightTime(__instance) && !Skeleton.IsEclipse(__instance))
             {
                 return;
             }
@@ -39,16 +40,34 @@ namespace Skeleton
                 }
             }
 
+            var ressurectedPawns = new List<Pawn>();
             var map = __instance;
             var corpsesForThisMap = from corpse in Skeleton.validCorpses
                 where corpse != null &&
                       (corpse.Map == map || corpse.ParentHolder is Building_Grave grave && grave.Map == map) &&
                       corpse.GetRotStage() == RotStage.Dessicated
                 select corpse;
-            if (corpsesForThisMap.Any() && Rand.Value < 0.4)
+            if (corpsesForThisMap.Any())
             {
-                Skeleton.RessurectCorpse(corpsesForThisMap.RandomElement());
-                return;
+                if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().AllAtOnce)
+                {
+                    foreach (var corpse in corpsesForThisMap.ToList())
+                    {
+                        var pawn = Skeleton.RessurectCorpse(corpse);
+                        if (pawn != null)
+                        {
+                            ressurectedPawns.Add(pawn);
+                        }
+                    }
+                }
+                else
+                {
+                    if (Rand.Value < 0.4)
+                    {
+                        Skeleton.RessurectCorpse(corpsesForThisMap.RandomElement());
+                        return;
+                    }
+                }
             }
 
             if (!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().AllowZombies)
@@ -61,12 +80,42 @@ namespace Skeleton
                       (corpse.Map == map || corpse.ParentHolder is Building_Grave grave && grave.Map == map)
                       && corpse.GetRotStage() == RotStage.Rotting
                 select corpse;
-            if (!corpsesForThisMap.Any() || !(Rand.Value < 0.4))
+            if (corpsesForThisMap.Any())
+            {
+                if (LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().AllAtOnce)
+                {
+                    foreach (var corpse in corpsesForThisMap.ToList())
+                    {
+                        var pawn = Skeleton.RessurectCorpse(corpse, true);
+                        if (pawn != null)
+                        {
+                            ressurectedPawns.Add(pawn);
+                        }
+                    }
+                }
+                else
+                {
+                    if (Rand.Value < 0.4)
+                    {
+                        Skeleton.RessurectCorpse(corpsesForThisMap.RandomElement(), true);
+                    }
+                }
+            }
+
+            if (ressurectedPawns.Count <= 0)
             {
                 return;
             }
 
-            Skeleton.RessurectCorpse(corpsesForThisMap.RandomElement(), true);
+            var messageType = MessageTypeDefOf.NeutralEvent;
+            if (ressurectedPawns.Any(pawn => pawn.Faction.HostileTo(Faction.OfPlayer)))
+            {
+                messageType = MessageTypeDefOf.NegativeEvent;
+            }
+
+            var message = new Message("ressurectMessageAll".Translate(ressurectedPawns.Count), messageType,
+                new LookTargets(ressurectedPawns));
+            Messages.Message(message);
         }
     }
 }

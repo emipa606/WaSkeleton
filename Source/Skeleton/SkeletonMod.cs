@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Mlie;
+using UnityEngine;
 using Verse;
 
 namespace Skeleton
@@ -6,6 +7,8 @@ namespace Skeleton
     [StaticConstructorOnStartup]
     internal class SkeletonMod : Mod
     {
+        private static string currentVersion;
+
         /// <summary>
         ///     The private settings
         /// </summary>
@@ -17,6 +20,9 @@ namespace Skeleton
         /// <param name="content"></param>
         public SkeletonMod(ModContentPack content) : base(content)
         {
+            currentVersion =
+                VersionFromManifest.GetVersionFromModMetaData(
+                    ModLister.GetActiveModWithIdentifier("Mlie.WaSkeleton"));
         }
 
         /// <summary>
@@ -64,12 +70,16 @@ namespace Skeleton
                 "ExplodeOnDeath_Tooltip".Translate());
             listing_Standard.CheckboxLabeled("AddHediffToAll_Label".Translate(), ref Settings.AddHediffToAll,
                 "AddHediffToAll_Tooltip".Translate());
+            listing_Standard.Gap();
             listing_Standard.CheckboxLabeled("ReanimateCorpses_Label".Translate(), ref Settings.ReanimateCorpses,
                 "ReanimateCorpses_Tooltip".Translate());
             if (Settings.ReanimateCorpses)
             {
                 listing_Standard.CheckboxLabeled("EnemyIsHostile_Label".Translate(), ref Settings.EnemyIsHostile,
                     "EnemyIsHostile_Tooltip".Translate());
+                listing_Standard.CheckboxLabeled("AllowZombies_Label".Translate(), ref Settings.AllowZombies,
+                    "AllowZombies_Tooltip".Translate());
+                listing_Standard.Gap();
                 listing_Standard.CheckboxLabeled("OnlyBuried_Label".Translate(), ref Settings.OnlyBuried,
                     "OnlyBuried_Tooltip".Translate());
                 listing_Standard.CheckboxLabeled("OnlyNonBuried_Label".Translate(), ref Settings.OnlyNonBuried,
@@ -78,8 +88,23 @@ namespace Skeleton
                     "OnlyColonists_Tooltip".Translate());
                 listing_Standard.CheckboxLabeled("OnlyNonColonists_Label".Translate(), ref Settings.OnlyNonColonists,
                     "OnlyNonColonists_Tooltip".Translate());
-                listing_Standard.CheckboxLabeled("AllowZombies_Label".Translate(), ref Settings.AllowZombies,
-                    "AllowZombies_Tooltip".Translate());
+                listing_Standard.CheckboxLabeled("OnlyDuringEclipse_Label".Translate(), ref Settings.OnlyDuringEclipse,
+                    "OnlyDuringEclipse_Tooltip".Translate());
+                listing_Standard.Gap();
+                listing_Standard.CheckboxLabeled("AllAtOnce_Label".Translate(), ref Settings.AllAtOnce,
+                    "AllAtOnce_Tooltip".Translate());
+            }
+
+            listing_Standard.Gap();
+            listing_Standard.CheckboxLabeled("VerboseLogging_Label".Translate(), ref Settings.VerboseLogging,
+                "VerboseLogging_Tooltip".Translate());
+
+            if (currentVersion != null)
+            {
+                listing_Standard.Gap();
+                GUI.contentColor = Color.gray;
+                listing_Standard.Label("CurrentModVersion_Label".Translate(currentVersion));
+                GUI.contentColor = Color.white;
             }
 
             if (OnlyBuriedPre && Settings.OnlyNonBuried)
