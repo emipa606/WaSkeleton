@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
     <modNameReadable>WaSkeleton</modNameReadable>
@@ -30,12 +30,12 @@ Activate it in the mod-options if it sounds interresting and thanks to NonSpecif
 
 Fixed in this version is that skeleton and zombies do not feel pain. This was always intended and should now be working.</content>
   </HugsLib.UpdateFeatureDef>
-	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
-		<defName>WaSkeleton_1_0_24_0</defName>
-		<assemblyVersion>1.0.24.0</assemblyVersion>
-		<content>This update adds the option to ressurect only during eclipses, by request.
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>WaSkeleton_1_0_24_0</defName>
+    <assemblyVersion>1.0.24.0</assemblyVersion>
+    <content>This update adds the option to ressurect only during eclipses, by request.
 
 It also adds an option to ressurect all valid corpses at once, for you who want a large skeleton-raid four days after that tribal faction assulted your colony, all because you forgot to burn the corpses in time :)
 </content>
-	</HugsLib.UpdateFeatureDef>
+  </HugsLib.UpdateFeatureDef>
 </Defs>

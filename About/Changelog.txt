@@ -1,5 +1,8 @@
 # Changelog for WaSkeleton
 
+1.0.25.0 - Correct zombie label, removed specific undead meat/leather
+
+
 1.0.24.0 - Added option to ressurect only during eclipse, and to ressurect all corpses at once
 
 

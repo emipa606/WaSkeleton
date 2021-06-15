@@ -151,7 +151,8 @@
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>3000</lifeExpectancy>
-      <leatherDef>Leather_Human</leatherDef>
+      <useMeatFrom>Human</useMeatFrom>
+      <useLeatherFrom>Human</useLeatherFrom>
       <nameCategory>HumanStandard</nameCategory>
       <body>DRSKT_Body</body>
       <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
@@ -160,7 +161,6 @@
       <baseHealthScale>0.9</baseHealthScale>
       <foodType>OmnivoreHuman</foodType>
       <gestationPeriodDays>9999</gestationPeriodDays>
-      <meatMarketValue>0.8</meatMarketValue>
       <manhunterOnDamageChance>0.60</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.04</manhunterOnTameFailChance>
       <litterSizeCurve>
@@ -230,7 +230,7 @@
   </AlienRace.ThingDef_AlienRace>
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>DRSKT_Race_Zombie</defName>
-    <label>DRSKT_Zombie</label>
+    <label>Zombie</label>
     <description>Not yet a skeleton, something woke it up too early. Its mind is fuzzy but its will is strong.</description>
     <!--=============================================================================================================================-->
     <alienRace>
@@ -391,7 +391,6 @@
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>3000</lifeExpectancy>
-      <leatherDef>Leather_Human</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <body>DRSKT_Body_Zombie</body>
       <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
@@ -400,7 +399,8 @@
       <baseHealthScale>0.9</baseHealthScale>
       <foodType>OmnivoreHuman</foodType>
       <gestationPeriodDays>9999</gestationPeriodDays>
-      <meatMarketValue>0.8</meatMarketValue>
+      <useMeatFrom>Human</useMeatFrom>
+      <useLeatherFrom>Human</useLeatherFrom>
       <manhunterOnDamageChance>0.60</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.04</manhunterOnTameFailChance>
       <litterSizeCurve>

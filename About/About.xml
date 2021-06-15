@@ -31,6 +31,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1627043991
 - Added compatibility with mass graves
 - Added an option to sometimes spawn zombies, textures by S-Purple
 - Added an option to make enemy pawns spawn in aggro state, zombies get manhunter and skeletons try to attack the colony.
+- Added an option to only ressurect during eclipses
+- Added an option to ressurect all corpses at once, for a more challenging play
 - Undead should no longer feel pain
 - Updated russian translation, thanks Tkhakiro
 
