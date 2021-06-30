@@ -1,5 +1,8 @@
 # Changelog for WaSkeleton
 
+1.0.27.0 - Fix for nonexisting gameconditions, thanks Narret for the help with testing!
+
+
 1.0.26.0 - Extra check on eclipse-code. Not sure if its enough
 
 

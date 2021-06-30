@@ -411,7 +411,7 @@ namespace Skeleton
 
             var tempAllGameConditionsAffectingMap = new List<GameCondition>();
             map.gameConditionManager?.GetAllGameConditionsAffectingMap(map, tempAllGameConditionsAffectingMap);
-            return tempAllGameConditionsAffectingMap.Any(condition => condition.def.defName == "Eclipse");
+            return tempAllGameConditionsAffectingMap.Any(condition => condition?.def?.defName == "Eclipse");
         }
 
         public static void LogMessage(string message, bool forced = false)
