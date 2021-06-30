@@ -399,14 +399,18 @@ namespace Skeleton
 
         public static bool IsEclipse(Map map)
         {
+            if (map == null)
+            {
+                return false;
+            }
+
             if (!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().OnlyDuringEclipse)
             {
                 return false;
             }
 
             var tempAllGameConditionsAffectingMap = new List<GameCondition>();
-            map.gameConditionManager.GetAllGameConditionsAffectingMap(map, tempAllGameConditionsAffectingMap);
-            LogMessage(string.Join(",", tempAllGameConditionsAffectingMap));
+            map.gameConditionManager?.GetAllGameConditionsAffectingMap(map, tempAllGameConditionsAffectingMap);
             return tempAllGameConditionsAffectingMap.Any(condition => condition.def.defName == "Eclipse");
         }
 

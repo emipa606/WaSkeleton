@@ -1,5 +1,8 @@
 # Changelog for WaSkeleton
 
+1.0.26.0 - Extra check on eclipse-code. Not sure if its enough
+
+
 1.0.25.0 - Correct zombie label, removed specific undead meat/leather
 
 
