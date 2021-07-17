@@ -157,7 +157,7 @@ namespace Skeleton
             }
 
             GenSpawn.Spawn(pawnToRessurect, cellToRessurectOn, map);
-            MoteMaker.ThrowSmoke(cellToRessurectOn.ToVector3(), map, 2f);
+            FleckMaker.ThrowSmoke(cellToRessurectOn.ToVector3(), map, 2f);
             var hediffToAdd = DefDatabase<HediffDef>.GetNamedSilentFail("RessurectedFromTheDead");
             if (zombie)
             {
@@ -322,7 +322,7 @@ namespace Skeleton
 
             var request = new PawnGenerationRequest(localPawnKind, corpse.InnerPawn.Faction,
                 PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 0, false, true, false,
-                false, false, false, false, false, 0, null, 1, null, null, null, null, null, null, null,
+                false, false, false, false, false, 0, 0, null, 1, null, null, null, null, null, null, null,
                 corpse.InnerPawn.gender);
             var newPawn = PawnGenerator.GeneratePawn(request);
             newPawn.Name = corpse.InnerPawn.Name;
@@ -332,7 +332,7 @@ namespace Skeleton
                 sr.Level = corpse.InnerPawn.skills.GetSkill(sr.def).levelInt;
             }
 
-            if (corpse.InnerPawn.Faction != null && corpse.InnerPawn.Faction.IsPlayer)
+            if (corpse.InnerPawn.Faction is {IsPlayer: true})
             {
                 newPawn.playerSettings.hostilityResponse = HostilityResponseMode.Attack;
             }
