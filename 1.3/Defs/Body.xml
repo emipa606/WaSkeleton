@@ -89,6 +89,7 @@
           <groups>
             <li>Shoulders</li>
           </groups>
+          <woundAnchorTag>LeftShoulder</woundAnchorTag>
           <parts>
             <li>
               <def>Clavicle</def>
@@ -193,6 +194,7 @@
           <groups>
             <li>Shoulders</li>
           </groups>
+          <woundAnchorTag>RightShoulder</woundAnchorTag>
           <parts>
             <li>
               <def>Clavicle</def>
@@ -306,6 +308,7 @@
           <groups>
             <li>Legs</li>
           </groups>
+          <woundAnchorTag>LeftLeg</woundAnchorTag>
           <parts>
             <li>
               <def>Femur</def>
@@ -385,6 +388,7 @@
           <groups>
             <li>Legs</li>
           </groups>
+          <woundAnchorTag>RightLeg</woundAnchorTag>
           <parts>
             <li>
               <def>Femur</def>
@@ -548,6 +552,7 @@
           <groups>
             <li>Shoulders</li>
           </groups>
+          <woundAnchorTag>LeftShoulder</woundAnchorTag>
           <parts>
             <li>
               <def>Clavicle</def>
@@ -652,6 +657,7 @@
           <groups>
             <li>Shoulders</li>
           </groups>
+          <woundAnchorTag>RightShoulder</woundAnchorTag>
           <parts>
             <li>
               <def>Clavicle</def>
@@ -765,6 +771,7 @@
           <groups>
             <li>Legs</li>
           </groups>
+          <woundAnchorTag>LeftLeg</woundAnchorTag>
           <parts>
             <li>
               <def>Femur</def>
@@ -844,6 +851,7 @@
           <groups>
             <li>Legs</li>
           </groups>
+          <woundAnchorTag>RightLeg</woundAnchorTag>
           <parts>
             <li>
               <def>Femur</def>
