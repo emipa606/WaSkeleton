@@ -17,6 +17,7 @@ namespace Skeleton
         public bool OnlyDuringEclipse;
         public bool OnlyNonBuried;
         public bool OnlyNonColonists;
+        public float ReanimateChance = 1f;
         public bool ReanimateCorpses;
         public bool VerboseLogging;
 
@@ -37,6 +38,7 @@ namespace Skeleton
             Scribe_Values.Look(ref OnlyNonColonists, "OnlyNonColonists");
             Scribe_Values.Look(ref OnlyDuringEclipse, "OnlyDuringEclipse");
             Scribe_Values.Look(ref AllAtOnce, "AllAtOnce");
+            Scribe_Values.Look(ref ReanimateChance, "ReanimateChance", 1f);
             Scribe_Values.Look(ref VerboseLogging, "VerboseLogging");
         }
     }

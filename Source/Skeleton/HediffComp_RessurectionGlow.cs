@@ -8,7 +8,7 @@ namespace Skeleton
         private Thing light;
         private int ticks;
 
-        private HediffCompProperties_RessurectionGlow Props => (HediffCompProperties_RessurectionGlow) props;
+        private HediffCompProperties_RessurectionGlow Props => (HediffCompProperties_RessurectionGlow)props;
 
         public override void CompPostTick(ref float severityAdjustment)
         {

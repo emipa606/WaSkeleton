@@ -49,7 +49,7 @@ namespace Skeleton
                 return false;
             }
 
-            if (!corpse.InnerPawn.health?.hediffSet?.HasHead == true)
+            if (corpse.InnerPawn.health?.hediffSet?.HasHead == false)
             {
                 return false;
             }
@@ -110,7 +110,8 @@ namespace Skeleton
             }
 
             var randValue = Rand.Value;
-            return randValue < 0.2f;
+            return randValue < 0.2f * LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>()
+                .ReanimateChance;
         }
 
         public static Pawn RessurectCorpse(Corpse corpse, bool zombie = false)
@@ -182,7 +183,7 @@ namespace Skeleton
                 else
                 {
                     LordMaker.MakeNewLord(pawnToRessurect.Faction, new LordJob_AssaultColony(pawnToRessurect.Faction),
-                        pawnToRessurect.Map, new List<Pawn> {pawnToRessurect});
+                        pawnToRessurect.Map, new List<Pawn> { pawnToRessurect });
                 }
             }
 
@@ -235,7 +236,11 @@ namespace Skeleton
                     }
                     else
                     {
-                        validCorpses.Add(corpse);
+                        if (Rand.Value <= LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>()
+                            .ReanimateChance)
+                        {
+                            validCorpses.Add(corpse);
+                        }
                     }
                 }
 
@@ -259,7 +264,11 @@ namespace Skeleton
                     }
                     else
                     {
-                        validCorpses.Add(grave.Corpse);
+                        if (Rand.Value <= LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>()
+                            .ReanimateChance)
+                        {
+                            validCorpses.Add(grave.Corpse);
+                        }
                     }
                 }
             }
@@ -332,7 +341,7 @@ namespace Skeleton
                 sr.Level = corpse.InnerPawn.skills.GetSkill(sr.def).levelInt;
             }
 
-            if (corpse.InnerPawn.Faction is {IsPlayer: true})
+            if (corpse.InnerPawn.Faction is { IsPlayer: true })
             {
                 newPawn.playerSettings.hostilityResponse = HostilityResponseMode.Attack;
             }

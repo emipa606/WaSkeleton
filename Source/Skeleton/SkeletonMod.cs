@@ -1,4 +1,5 @@
-﻿using Mlie;
+﻿using System;
+using Mlie;
 using UnityEngine;
 using Verse;
 
@@ -93,6 +94,11 @@ namespace Skeleton
                 listing_Standard.Gap();
                 listing_Standard.CheckboxLabeled("AllAtOnce_Label".Translate(), ref Settings.AllAtOnce,
                     "AllAtOnce_Tooltip".Translate());
+                listing_Standard.Gap();
+                listing_Standard.Label("ReanimateChance_Label".Translate(Math.Round(Settings.ReanimateChance * 100)),
+                    -1f,
+                    "ReanimateChance_Description".Translate());
+                Settings.ReanimateChance = listing_Standard.Slider(Settings.ReanimateChance, 0, 1f);
             }
 
             listing_Standard.Gap();

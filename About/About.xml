@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Wa! Skeleton! (Continued)</name>
   <packageId>Mlie.WaSkeleton</packageId>
@@ -21,7 +21,7 @@
   <loadAfter>
     <li>erdelf.HumanoidAlienRaces</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Dalraes mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1627043991
 
@@ -37,7 +37,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1627043991
 - Undead should no longer feel pain
 - Updated russian translation, thanks Tkhakiro
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
@@ -48,7 +48,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1627043991
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657][img]https://i.imgur.com/kNldlMg.png[/img][/url]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 120% compatible with vanilla
 
@@ -67,7 +67,7 @@ Languages: English, Korean, Russian
 2019/1/25 - add russian translation (thanks ✿4ecHoK❀)
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -76,6 +76,5 @@ Languages: English, Korean, Russian
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
-
 </description>
 </ModMetaData>
