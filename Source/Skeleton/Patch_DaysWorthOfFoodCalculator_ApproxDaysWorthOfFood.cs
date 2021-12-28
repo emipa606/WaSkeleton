@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
@@ -6,7 +6,6 @@ using Verse;
 
 namespace Skeleton
 {
-    // Token: 0x02000003 RID: 3
     [HarmonyPatch(typeof(DaysWorthOfFoodCalculator), "ApproxDaysWorthOfFood", typeof(List<Pawn>),
         typeof(List<ThingDefCount>),
         typeof(int),

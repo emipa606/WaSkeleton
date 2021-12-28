@@ -1,10 +1,9 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 
 namespace Skeleton
 {
-    // Token: 0x02000003 RID: 3
     [HarmonyPatch(typeof(ThinkNode_ConditionalNeedPercentageAbove))]
     [HarmonyPatch("Satisfied")]
     public static class Patch_ThinkNode_ConditionalNeedPercentageAbove

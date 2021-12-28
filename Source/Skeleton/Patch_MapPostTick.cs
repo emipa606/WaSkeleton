@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
 using RimWorld;
@@ -6,12 +6,10 @@ using Verse;
 
 namespace Skeleton
 {
-    // Token: 0x02000003 RID: 3
     [HarmonyPatch(typeof(Map))]
     [HarmonyPatch("MapPostTick")]
     public static class Patch_MapPostTick
     {
-        // Token: 0x06000002 RID: 2 RVA: 0x00002078 File Offset: 0x00000278
         [HarmonyPrefix]
         private static void Postfix(ref Map __instance)
         {

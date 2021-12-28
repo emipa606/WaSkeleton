@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
 using Verse;
 
 namespace Skeleton
 {
-    // Token: 0x02000003 RID: 3
     [HarmonyPatch(typeof(Pawn_NeedsTracker))]
     [HarmonyPatch("AddOrRemoveNeedsAsAppropriate")]
     public static class Patch_Pawn_NeedsTracker
