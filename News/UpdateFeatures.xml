@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <HugsLib.UpdateFeatureDef Abstract="true" Name="Mlie_UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="WaSkeleton_UpdateFeatureBase">
     <modNameReadable>WaSkeleton</modNameReadable>
     <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2159119022</linkUrl>
   </HugsLib.UpdateFeatureDef>
-  <HugsLib.UpdateFeatureDef ParentName="Mlie_UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef ParentName="WaSkeleton_UpdateFeatureBase">
     <defName>WaSkeleton_1_0_3_0</defName>
     <assemblyVersion>1.0.3.0</assemblyVersion>
     <content>The mod now has some added features. In the options for the mod it is now possible to turn of the death-explosion for those who want to.
@@ -15,13 +15,13 @@ You can select to only reanimate dead colonists as well as restrict it only to b
 I hope you will like this addition and if you have any ideas for more features, please leave a comment on the mod page or on the linked Discord-server!
 </content>
   </HugsLib.UpdateFeatureDef>
-  <HugsLib.UpdateFeatureDef ParentName="Mlie_UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef ParentName="WaSkeleton_UpdateFeatureBase">
     <defName>WaSkeleton_1_0_6_0</defName>
     <assemblyVersion>1.0.6.0</assemblyVersion>
     <content>There is now an option to add the ressurected Hediff to all skeletons, not just those ressurected during the game but also all guests, starting pawns and others.
 </content>
   </HugsLib.UpdateFeatureDef>
-  <HugsLib.UpdateFeatureDef ParentName="Mlie_UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef ParentName="WaSkeleton_UpdateFeatureBase">
     <defName>WaSkeleton_1_0_19_0</defName>
     <assemblyVersion>1.0.19.0</assemblyVersion>
     <content>img:Zombie|caption:There is now an option for adding zombies to the game. These will rarely spawn for a corpse during the rot-stage and their minds are more fuzzy and they are therefor immune to psychic fenomena. 
@@ -30,7 +30,7 @@ Activate it in the mod-options if it sounds interresting and thanks to NonSpecif
 
 Fixed in this version is that skeleton and zombies do not feel pain. This was always intended and should now be working.</content>
   </HugsLib.UpdateFeatureDef>
-  <HugsLib.UpdateFeatureDef ParentName="Mlie_UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef ParentName="WaSkeleton_UpdateFeatureBase">
     <defName>WaSkeleton_1_0_24_0</defName>
     <assemblyVersion>1.0.24.0</assemblyVersion>
     <content>This update adds the option to ressurect only during eclipses, by request.
