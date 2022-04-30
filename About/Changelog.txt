@@ -1,5 +1,8 @@
 # Changelog for WaSkeleton
 
+1.3.3 - Added more bodytypes for the skeletons, thanks to the graphics from the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2610132116]Spooky Scary Skeletons[/url] mod. Very nice of Kasmex_Forever to let me use them!
+
+
 1.3.2 - More unique defname for the HugLib-news base-definition, to avoid conflicts with other mods
 
 

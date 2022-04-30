@@ -15,8 +15,12 @@
           <alienbodytypes>
             <li>Thin</li>
             <li>Male</li>
+            <li>Fat</li>
+            <li>Hulk</li>
+            <li>Female</li>
           </alienbodytypes>
           <aliencrowntypes>
+            <li>Average_Narrow</li>
             <li>Average_Normal</li>
             <li>Average_Wa</li>
           </aliencrowntypes>
