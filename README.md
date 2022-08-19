@@ -17,6 +17,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1627043991
 - Added an option to set the ressurection chance generally
 - Undead should no longer feel pain
 - Updated russian translation, thanks Tkhakiro
+- Added more bodytypes for the skeletons, thanks to the graphics from the https://steamcommunity.com/sharedfiles/filedetails/?id=2610132116]Spooky Scary Skeletons mod. Very nice of Kasmex_Forever to let me use them and for Stokeling9701 for the idea!
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
@@ -54,6 +55,7 @@ Languages: English, Korean, Russian
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

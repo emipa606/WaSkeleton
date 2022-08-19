@@ -1,18 +1,17 @@
 using HarmonyLib;
 using Verse;
 
-namespace Skeleton
+namespace Skeleton;
+
+[HarmonyPatch(typeof(GameComponentUtility))]
+[HarmonyPatch("LoadedGame")]
+public static class Patch_LoadedGame
 {
-    [HarmonyPatch(typeof(GameComponentUtility))]
-    [HarmonyPatch("LoadedGame")]
-    public static class Patch_LoadedGame
+    [HarmonyPrefix]
+    private static void Postfix()
     {
-        [HarmonyPrefix]
-        private static void Postfix()
-        {
-            Skeleton.validCorpses.Clear();
-            Skeleton.validZombieCorpses.Clear();
-            Skeleton.ScanMapsForCorpses();
-        }
+        Skeleton.validCorpses.Clear();
+        Skeleton.validZombieCorpses.Clear();
+        Skeleton.ScanMapsForCorpses();
     }
 }

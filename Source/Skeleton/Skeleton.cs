@@ -16,6 +16,7 @@ public static class Skeleton
 
     private static readonly PawnKindDef SkeletonPawnKind;
     private static readonly PawnKindDef ZombiePawnKind;
+    public static List<ThingDef> allGraves;
 
     private static readonly List<TaggedString> ressurectMessages = new List<TaggedString>
     {
@@ -28,6 +29,10 @@ public static class Skeleton
 
     static Skeleton()
     {
+        allGraves = DefDatabase<ThingDef>.AllDefsListForReading
+            .Where(def => def.thingClass == typeof(Building_Grave) ||
+                          def.thingClass.IsSubclassOf(typeof(Building_Grave))).ToList();
+        Log.Message($"[WaSkeleton]: Found {allGraves.Count} possible graves");
         var harmonyInstance = new Harmony("com.rimworld.Dalrae.Skeleton");
         SkeletonPawnKind = DefDatabase<PawnKindDef>.GetNamedSilentFail("DRSKT_Colonist");
         ZombiePawnKind = DefDatabase<PawnKindDef>.GetNamedSilentFail("DRSKT_Colonist_Zombie");
@@ -60,6 +65,12 @@ public static class Skeleton
             {
                 ExplodeOnDeath = true
             };
+        }
+
+        if (!settings.OnlyNonBuried && corpse.ParentHolder is Building_Grave grave &&
+            settings.SecureGraves?.Contains(grave.def.defName) == true)
+        {
+            return false;
         }
 
         if (settings.OnlyBuried && !(corpse.ParentHolder is Building_Grave))
@@ -202,7 +213,8 @@ public static class Skeleton
 
     public static void ScanMapsForCorpses()
     {
-        if (!LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>().ReanimateCorpses)
+        var settings = LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>();
+        if (!settings.ReanimateCorpses)
         {
             return;
         }
@@ -234,8 +246,7 @@ public static class Skeleton
                 }
                 else
                 {
-                    if (Rand.Value <= LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>()
-                            .ReanimateChance)
+                    if (Rand.Value <= settings.ReanimateChance)
                     {
                         validCorpses.Add(corpse);
                     }
@@ -262,8 +273,7 @@ public static class Skeleton
                 }
                 else
                 {
-                    if (Rand.Value <= LoadedModManager.GetMod<SkeletonMod>().GetSettings<SkeletonSettings>()
-                            .ReanimateChance)
+                    if (Rand.Value <= settings.ReanimateChance)
                     {
                         validCorpses.Add(grave.Corpse);
                     }

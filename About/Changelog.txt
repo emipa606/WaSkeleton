@@ -1,5 +1,9 @@
 # Changelog for WaSkeleton
 
+1.3.4 - Added setting for secure graves, that do not allow corpses to ressurect
+Used DeepL to update translations for Russian
+
+
 1.3.3 - Added more bodytypes for the skeletons, thanks to the graphics from the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2610132116]Spooky Scary Skeletons[/url] mod. Very nice of Kasmex_Forever to let me use them!
 
 

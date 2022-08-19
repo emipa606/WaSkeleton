@@ -32,6 +32,8 @@
   <AllAtOnce_Tooltip>Instead of ressurecting one by one, pawns will return all at once, like an undead horde</AllAtOnce_Tooltip>
   <ReanimateChance_Label>Reanimation chance: {0}%</ReanimateChance_Label>
   <ReanimateChance_Description>The chance of a corpse being ressurected</ReanimateChance_Description>
+  <SecureGraves_Label>Secure graves</SecureGraves_Label>
+  <SecureGraves_Tooltip>Corpses buried in selected graves will not be able to ressurect</SecureGraves_Tooltip>
   <CurrentModVersion_Label>Installed mod-version: {0}</CurrentModVersion_Label>
   <VerboseLogging_Label>Verbose logging</VerboseLogging_Label>
   <VerboseLogging_Tooltip>Will log a lot of rows, mainly for debugging and error checking</VerboseLogging_Tooltip>

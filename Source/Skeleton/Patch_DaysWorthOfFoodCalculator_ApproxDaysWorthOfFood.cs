@@ -4,27 +4,26 @@ using RimWorld;
 using RimWorld.Planet;
 using Verse;
 
-namespace Skeleton
+namespace Skeleton;
+
+[HarmonyPatch(typeof(DaysWorthOfFoodCalculator), "ApproxDaysWorthOfFood", typeof(List<Pawn>),
+    typeof(List<ThingDefCount>),
+    typeof(int),
+    typeof(IgnorePawnsInventoryMode),
+    typeof(Faction),
+    typeof(WorldPath),
+    typeof(float),
+    typeof(int),
+    typeof(bool))]
+public static class Patch_DaysWorthOfFoodCalculator_ApproxDaysWorthOfFood
 {
-    [HarmonyPatch(typeof(DaysWorthOfFoodCalculator), "ApproxDaysWorthOfFood", typeof(List<Pawn>),
-        typeof(List<ThingDefCount>),
-        typeof(int),
-        typeof(IgnorePawnsInventoryMode),
-        typeof(Faction),
-        typeof(WorldPath),
-        typeof(float),
-        typeof(int),
-        typeof(bool))]
-    public static class Patch_DaysWorthOfFoodCalculator_ApproxDaysWorthOfFood
+    public static void Prefix(ref List<Pawn> pawns, List<ThingDefCount> extraFood, int tile,
+        IgnorePawnsInventoryMode
+            ignoreInventory, Faction faction, WorldPath path, float nextTileCostLeft, int caravanTicksPerMove, bool
+            assumeCaravanMoving)
     {
-        public static void Prefix(ref List<Pawn> pawns, List<ThingDefCount> extraFood, int tile,
-            IgnorePawnsInventoryMode
-                ignoreInventory, Faction faction, WorldPath path, float nextTileCostLeft, int caravanTicksPerMove, bool
-                assumeCaravanMoving)
-        {
-            var list = new List<Pawn>(pawns);
-            list.RemoveAll(pawn => pawn.kindDef.race.defName.Contains("DRSKT"));
-            pawns = list;
-        }
+        var list = new List<Pawn>(pawns);
+        list.RemoveAll(pawn => pawn.kindDef.race.defName.Contains("DRSKT"));
+        pawns = list;
     }
 }

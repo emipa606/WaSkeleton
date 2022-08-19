@@ -1,7 +1,6 @@
-namespace Skeleton
+namespace Skeleton;
+
+public static class ExplosionDef
 {
-    public static class ExplosionDef
-    {
-        public static bool SkeletonEXPLOSION;
-    }
+    public static bool SkeletonEXPLOSION;
 }
