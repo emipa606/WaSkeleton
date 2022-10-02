@@ -69,6 +69,16 @@
                     <li>UpperHead</li>
                     <li>FullHead</li>
                   </groups>
+                  <parts>
+                    <li>
+                      <def>Brain</def>
+                      <coverage>0.8</coverage>
+                      <groups>
+                        <li>UpperHead</li>
+                        <li>FullHead</li>
+                      </groups>
+                    </li>
+                  </parts>
                 </li>
                 <li>
                   <def>Jaw</def>
