@@ -1,5 +1,8 @@
 # Changelog for WaSkeleton
 
+1.3.5 - Skeletons and Zombies now have brains for psycasting. Also skeletons will no longer have tattoos as it didnt make sense.
+
+
 1.3.4 - Added setting for secure graves, that do not allow corpses to ressurect
 Used DeepL to update translations for Russian
 

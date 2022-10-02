@@ -15,6 +15,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1627043991
 - Added an option to only ressurect during eclipses
 - Added an option to ressurect all corpses at once, for a more challenging play
 - Added an option to set the ressurection chance generally
+- Added an option to define secure graves that corpses cannot ressurect from
 - Undead should no longer feel pain
 - Updated russian translation, thanks Tkhakiro
 - Added more bodytypes for the skeletons, thanks to the graphics from the https://steamcommunity.com/sharedfiles/filedetails/?id=2610132116]Spooky Scary Skeletons mod. Very nice of Kasmex_Forever to let me use them and for Stokeling9701 for the idea!
