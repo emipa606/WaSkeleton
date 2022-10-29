@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>DRSKT_Average_Narrow</defName>
+    <graphicPath>DRSKT/Heads/Average_Narrow</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>DRSKT_Average_Normal</defName>
+    <graphicPath>DRSKT/Heads/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>DRSKT_Average_Wa</defName>
+    <graphicPath>DRSKT/Heads/Average_Wa</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>DRSKTZombie_Average_Normal</defName>
+    <graphicPath>DRSKTZombie/Heads/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>DRSKTZombie_Average_Wa</defName>
+    <graphicPath>DRSKTZombie/Heads/Average_Wa</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+</Defs>

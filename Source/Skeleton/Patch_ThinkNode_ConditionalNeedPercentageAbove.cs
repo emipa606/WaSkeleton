@@ -8,16 +8,15 @@ namespace Skeleton;
 [HarmonyPatch("Satisfied")]
 public static class Patch_ThinkNode_ConditionalNeedPercentageAbove
 {
-    public static bool Prefix(Pawn pawn, ref bool __result, ref ThinkNode_ConditionalNeedPercentageAbove __instance)
+    public static bool Prefix(Pawn pawn, ref bool __result, ref ThinkNode_ConditionalNeedPercentageAbove __instance,
+        NeedDef ___need)
     {
         if (!pawn.kindDef.race.defName.Contains("DRSKT"))
         {
             return true;
         }
 
-        var traverse = Traverse.Create(__instance);
-        var need = traverse.Field("need").GetValue<NeedDef>();
-        if (need != NeedDefOf.Food)
+        if (___need != NeedDefOf.Food)
         {
             return true;
         }

@@ -9,11 +9,9 @@ namespace Skeleton;
 [HarmonyPatch("AddOrRemoveNeedsAsAppropriate")]
 public static class Patch_Pawn_NeedsTracker
 {
-    public static void Postfix(Pawn_NeedsTracker __instance)
+    public static void Postfix(Pawn_NeedsTracker __instance, ref List<Need> ___needs, ref Pawn ___pawn)
     {
-        var traverse = Traverse.Create(__instance);
-        var pawn = traverse.Field("pawn").GetValue<Pawn>();
-        if (!pawn.kindDef.race.defName.Contains("DRSKT"))
+        if (!___pawn.kindDef.race.defName.Contains("DRSKT"))
         {
             return;
         }
@@ -24,7 +22,6 @@ public static class Patch_Pawn_NeedsTracker
         }
 
         var item = __instance.TryGetNeed(NeedDefOf.Food);
-        var needlist = traverse.Field("needs").GetValue<List<Need>>();
-        needlist.Remove(item);
+        ___needs.Remove(item);
     }
 }

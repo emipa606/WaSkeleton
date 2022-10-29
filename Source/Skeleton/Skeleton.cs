@@ -73,7 +73,7 @@ public static class Skeleton
             return false;
         }
 
-        if (settings.OnlyBuried && !(corpse.ParentHolder is Building_Grave))
+        if (settings.OnlyBuried && corpse.ParentHolder is not Building_Grave)
         {
             return false;
         }
@@ -93,12 +93,7 @@ public static class Skeleton
             return false;
         }
 
-        if (corpse.GetRotStage() == RotStage.Fresh)
-        {
-            return false;
-        }
-
-        return true;
+        return corpse.GetRotStage() != RotStage.Fresh;
     }
 
     public static bool CanBeZombie(Corpse corpse)
@@ -338,9 +333,13 @@ public static class Skeleton
         }
 
         var request = new PawnGenerationRequest(localPawnKind, corpse.InnerPawn.Faction,
-            PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 0, false, true, false,
-            false, false, false, false, false, 0, 0, null, 1, null, null, null, null, null, null, null,
-            corpse.InnerPawn.gender);
+            PawnGenerationContext.NonPlayer, -1, false, false, false, true, false, 0, false, true, allowFood: false,
+            allowAddictions: false, inhabitant: false, certainlyBeenInCryptosleep: false,
+            forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, biocodeWeaponChance: 0,
+            biocodeApparelChance: 0, extraPawnForExtraRelationChance: null, relationWithExtraPawnChanceFactor: 1,
+            validatorPreGear: null, validatorPostGear: null, forcedTraits: null, prohibitedTraits: null,
+            minChanceToRedressWorldPawn: null, fixedBiologicalAge: null, fixedChronologicalAge: null,
+            fixedGender: corpse.InnerPawn.gender);
         var newPawn = PawnGenerator.GeneratePawn(request);
         newPawn.Name = corpse.InnerPawn.Name;
         newPawn.ageTracker = corpse.InnerPawn.ageTracker;
@@ -354,12 +353,13 @@ public static class Skeleton
             newPawn.playerSettings.hostilityResponse = HostilityResponseMode.Attack;
         }
 
-        newPawn.story.childhood = corpse.InnerPawn.story.childhood;
-        if (newPawn.story.adulthood != null)
+        newPawn.story.Childhood = corpse.InnerPawn.story.Childhood;
+        if (newPawn.story.Adulthood != null)
         {
-            newPawn.story.adulthood = corpse.InnerPawn.story.adulthood;
+            newPawn.story.Adulthood = corpse.InnerPawn.story.Adulthood;
         }
 
+        newPawn.genes = corpse.InnerPawn.genes;
         newPawn.story.traits = corpse.InnerPawn.story.traits;
         newPawn.abilities.abilities = corpse.InnerPawn.abilities.abilities;
         newPawn.skills.skills = corpse.InnerPawn.skills.skills;

@@ -19,6 +19,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1627043991
 - Undead should no longer feel pain
 - Updated russian translation, thanks Tkhakiro
 - Added more bodytypes for the skeletons, thanks to the graphics from the https://steamcommunity.com/sharedfiles/filedetails/?id=2610132116]Spooky Scary Skeletons mod. Very nice of Kasmex_Forever to let me use them and for Stokeling9701 for the idea!
+- Zombies and Skeletons now have brains for psycasting, thanks TheCakeIsALie!
+- A nice reskin of the zombies with https://steamcommunity.com/sharedfiles/filedetails/?id=2871340046]Wa! Skeleton! - Zombie Retexture by Elseud
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
