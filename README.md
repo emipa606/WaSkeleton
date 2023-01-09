@@ -62,3 +62,4 @@ Languages: English, Korean, Russian
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2159119022]Last updated 2023-01-09
