@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- Ressurection messages -->
+  <!-- Resurrection messages -->
   <ressurectMessage1>has come back from the dead!</ressurectMessage1>
   <ressurectMessage2>is reanimated!</ressurectMessage2>
   <ressurectMessage3>has awoken from their eternal sleep!</ressurectMessage3>
@@ -11,7 +11,7 @@
   <ExplodeOnDeath_Label>Skeletons explode on death</ExplodeOnDeath_Label>
   <ExplodeOnDeath_Tooltip>Instead of dying peacefully, the corpses will explode</ExplodeOnDeath_Tooltip>
   <AddHediffToAll_Label>Add reanimated hediff to all skeletons</AddHediffToAll_Label>
-  <AddHediffToAll_Tooltip>Also random spawning skeletons will have the Ressurected-hediff</AddHediffToAll_Tooltip>
+  <AddHediffToAll_Tooltip>Also random spawning skeletons will have the Resurrected-hediff</AddHediffToAll_Tooltip>
   <ReanimateCorpses_Label>Corpses can reanimate at night</ReanimateCorpses_Label>
   <ReanimateCorpses_Tooltip>Corpses have a chance of reanimating as skeletons during the night</ReanimateCorpses_Tooltip>
   <OnlyBuried_Label>Only reanimate buried corpses</OnlyBuried_Label>
@@ -23,17 +23,17 @@
   <OnlyNonColonists_Label>Only non-colonist corpses can reanimate</OnlyNonColonists_Label>
   <OnlyNonColonists_Tooltip>Only corpses of died non-colonists can come back as skeletons</OnlyNonColonists_Tooltip>
   <AllowZombies_Label>Allow corpses to sometimes come back as zombies</AllowZombies_Label>
-  <AllowZombies_Tooltip>Sometimes ressurection happens too early in the process and the corpse comes back as a zombie instead</AllowZombies_Tooltip>
-  <EnemyIsHostile_Label>Ressurected enemies spawn hostile</EnemyIsHostile_Label>
-  <EnemyIsHostile_Tooltip>If the ressurected pawn is an enemy of the player, it will attack instead or just leaving the map</EnemyIsHostile_Tooltip>
-  <OnlyDuringEclipse_Label>Only ressurect during eclipses</OnlyDuringEclipse_Label>
-  <OnlyDuringEclipse_Tooltip>Instead of ressurecting during the nighttime, pawns will ressurect during eclipses</OnlyDuringEclipse_Tooltip>
-  <AllAtOnce_Label>Ressurect all at once</AllAtOnce_Label>
-  <AllAtOnce_Tooltip>Instead of ressurecting one by one, pawns will return all at once, like an undead horde</AllAtOnce_Tooltip>
+  <AllowZombies_Tooltip>Sometimes resurrection happens too early in the process and the corpse comes back as a zombie instead</AllowZombies_Tooltip>
+  <EnemyIsHostile_Label>Resurrected enemies spawn hostile</EnemyIsHostile_Label>
+  <EnemyIsHostile_Tooltip>If the resurrected pawn is an enemy of the player, it will attack instead of just leaving the map</EnemyIsHostile_Tooltip>
+  <OnlyDuringEclipse_Label>Only resurrect during eclipses</OnlyDuringEclipse_Label>
+  <OnlyDuringEclipse_Tooltip>Instead of resurrecting during the nighttime, pawns will resurrect during eclipses</OnlyDuringEclipse_Tooltip>
+  <AllAtOnce_Label>Resurrect all at once</AllAtOnce_Label>
+  <AllAtOnce_Tooltip>Instead of resurrecting one by one, pawns will return all at once, like an undead horde</AllAtOnce_Tooltip>
   <ReanimateChance_Label>Reanimation chance: {0}%</ReanimateChance_Label>
-  <ReanimateChance_Description>The chance of a corpse being ressurected</ReanimateChance_Description>
+  <ReanimateChance_Description>The chance of a corpse being resurrected</ReanimateChance_Description>
   <SecureGraves_Label>Secure graves</SecureGraves_Label>
-  <SecureGraves_Tooltip>Corpses buried in selected graves will not be able to ressurect</SecureGraves_Tooltip>
+  <SecureGraves_Tooltip>Corpses buried in selected graves will not be able to resurrect</SecureGraves_Tooltip>
   <CurrentModVersion_Label>Installed mod-version: {0}</CurrentModVersion_Label>
   <VerboseLogging_Label>Verbose logging</VerboseLogging_Label>
   <VerboseLogging_Tooltip>Will log a lot of rows, mainly for debugging and error checking</VerboseLogging_Tooltip>

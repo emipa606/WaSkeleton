@@ -1,5 +1,8 @@
 # Changelog for WaSkeleton
 
+1.4.3 - Fixed spelling errors
+
+
 1.4.2 - Fixed gene-restrictions to not affect visuals, thanks to Razar on the HAR-discord
 
 
