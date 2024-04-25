@@ -33,7 +33,7 @@
   <AllAtOnce_Tooltip>Вместо того чтобы воскресать по одной, пешки возвращаются все сразу, как орда нежити</AllAtOnce_Tooltip>
   <ReanimateChance_Label>Шанс реанимации:{0}%</ReanimateChance_Label>
   <ReanimateChance_Description>Шанс того, что труп будет реанимирован</ReanimateChance_Description>
-  <SecureGraves_Label>Охрана могил</SecureGraves_Label>
+  <SecureGraves_Label>Безопасные могилы</SecureGraves_Label>
   <SecureGraves_Tooltip>Трупы, захороненные в выбранных могилах, не смогут ресуспендироваться</SecureGraves_Tooltip>
   <CurrentModVersion_Label>Установленная версия мода:{0}</CurrentModVersion_Label>
   <VerboseLogging_Label>Подробное протоколирование</VerboseLogging_Label>

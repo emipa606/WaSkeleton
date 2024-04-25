@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <HugsLib.UpdateFeatureDef Abstract="true" Name="WaSkeleton_UpdateFeatureBase">
     <modNameReadable>WaSkeleton</modNameReadable>
@@ -38,4 +38,9 @@ Fixed in this version is that skeleton and zombies do not feel pain. This was al
 It also adds an option to ressurect all valid corpses at once, for you who want a large skeleton-raid four days after that tribal faction assulted your colony, all because you forgot to burn the corpses in time :)
 </content>
   </HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="WaSkeleton_UpdateFeatureBase">
+		<defName>WaSkeleton_1_4_3</defName>
+		<assemblyVersion>1.4.3</assemblyVersion>
+		<content>Due to a bad interaction with the developer of the HAR framework combined with the increased work required I have decided to not further update this mod. It will stay up to support the previous versions of the game.</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

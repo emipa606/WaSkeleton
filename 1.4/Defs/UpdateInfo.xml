@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="WaSkeleton_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2159119022</linkUrl>
+		<banner>UpdateInfo/WaSkeleton</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="WaSkeleton_UpdateInfoBase">
+		<defName>WaSkeleton_1_4_3</defName>
+		<date>2024/4/25</date>
+		<content>Due to a bad interaction with the developer of the HAR framework combined with the increased work required I have decided to not further update this mod. It will stay up to support the previous versions of the game.</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+
